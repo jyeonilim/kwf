@@ -1,0 +1,64 @@
+@import "variables";
+@import "reset";
+@import "mixins/mixins";
+@import "component/component";
+
+/*******************************
+    Scaffolding
+*******************************/
+body {
+    background-color: $body-bg;
+    font: 400 14px 'NanumSquare', sans-serif;
+    letter-spacing: -1px;
+}
+a,
+a:hover {
+    color: $text-color;
+    text-decoration: none;
+}
+img,
+.image img {
+    width: 100%;
+}
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*******************************
+    Layout
+*******************************/
+.wrap {
+    @include clearfix;
+    min-width: 1200px;
+}
+
+/*******************************
+    Helper Class
+*******************************/
+.clearfix {
+    @include clearfix;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
