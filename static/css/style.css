@@ -53,17 +53,12 @@ table {
 *******************************/
 body {
   background-color: white;
-  font: 400 14px 'NanumSquare', sans-serif;
-  letter-spacing: -1px; }
+  font: 400 14px "Nanum Gothic", sans-serif; }
 
 a,
 a:hover {
   color: #777777;
   text-decoration: none; }
-
-img,
-.image img {
-  width: 100%; }
 
 button {
   border: 0;

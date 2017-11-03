@@ -8,17 +8,12 @@
 *******************************/
 body {
     background-color: $body-bg;
-    font: 400 14px 'NanumSquare', sans-serif;
-    letter-spacing: -1px;
+    font: 400 $font-size-base $font-family-base;
 }
 a,
 a:hover {
     color: $text-color;
     text-decoration: none;
-}
-img,
-.image img {
-    width: 100%;
 }
 button {
     border: 0;
