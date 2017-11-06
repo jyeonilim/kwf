@@ -26,6 +26,7 @@ button {
 *******************************/
 .wrap {
     @include clearfix;
+    width: 100%;
     min-width: 1200px;
 }
 .content {}
@@ -47,6 +48,7 @@ button {
     .quick-access {
         float: right;
         .access-link {
+            float: left;
             li {
                 display: inline-block;
                 font-size: 12px;
@@ -66,50 +68,330 @@ button {
                 }
             }
         }
+        .search-box {
+            float: left;
+            border: 1px solid #ddd;
+        }
+    }
+}
+
+/*******************************
+    Footer
+*******************************/
+.footer {
+    padding: 30px 0;
+    background-color: #393939;
+    .footer-inner {
+        @include clearfix;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .foot-logo {
+        float: left;
+        display: block;
+        width: 265px;
+        height: 46px;
+        background: url("../images/foot-logo.png") no-repeat 0 0;
+    }
+    .foot-info {
+        float: left;
+        margin-left: 90px;
+        &, a {
+            color: #ddd;
+        }
+        .foot-link {
+            @include clearfix;
+            margin-bottom: 15px;
+            li {
+                float: left;
+                font-size: 13px;
+                &:before {
+                    display: inline-block;
+                    width: 1px;
+                    height: 10px;
+                    margin: 0 10px;
+                    border-right: 1px solid #656565;
+                    background-color: #c7c7c7;
+                    content: '';
+                }
+                &:first-child:before {
+                    width: 0;
+                    margin: 0;
+                    border-right: 0;
+                }
+                &.privacy {
+                    a {
+                        color: #04cafc;
+                    }
+                }
+            }
+        }
+        dl {
+            @include clearfix;
+            dt, dd {
+                float: left;
+                line-height: 25px;
+            }
+            dd {
+                &:before {
+                    display: inline-block;
+                    width: 1px;
+                    height: 10px;
+                    margin: 0 10px;
+                    border-right: 1px solid #656565;
+                    background-color: #c7c7c7;
+                    content: '';
+                }
+                &:nth-of-type(1):before {
+                    width: 0;
+                    margin: 0;
+                    border-right: 0;
+                }
+                address {
+                    display: inline-block;
+                    font-style: normal;
+                }
+            }
+        }
+        .copyright {}
     }
 }
 
 /*******************************
     Main
 *******************************/
-//.wrapper {
-//    background-color: white;
-//    width: 480px;
-//    margin: 40px auto;
-//    padding: 50px;
-//    box-shadow: 0 0 5px #999;
-//}
-//.list_carousel {
-//    background-color: #ccc;
-//    margin: 0 0 30px 60px;
-//    width: 360px;
-//}
-//.list_carousel ul {
-//    margin: 0;
-//    padding: 0;
-//    list-style: none;
-//    display: block;
-//}
-//.list_carousel li {
-//    font-size: 40px;
-//    color: #999;
-//    text-align: center;
-//    background-color: #eee;
-//    border: 5px solid #999;
-//    width: 50px;
-//    height: 50px;
-//    padding: 0;
-//    margin: 6px;
-//    display: block;
-//    float: left;
-//}
 .main-visual {
-    li {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        li {
+            float: left;
+            width: 100%;
+            height: 410px;
+            min-width: 1200px;
+            background-position: 0 0;
+        }
+    }
+}
+// 메인 메뉴
+.main-gnb {
+    margin-top: 39px;
+    .gnb-item {
+        @include clearfix;
+        width: 1200px;
+        margin: 0 auto;
+        > li {
+            position: relative;
+            float: left;
+            width: 25%;
+            padding: 0 19px;
+            > a {
+                display: block;
+                padding: 45px 0;
+                border: 5px solid #ccc;
+                background-color: #ffeded;
+                font-weight: bold;
+                font-size: 21px;
+                color: #3e3d3d;
+                text-align: center;
+                &:before {
+                    display: block;
+                    width: 87px;
+                    height: 84px;
+                    margin: 0 auto 25px;
+                    background: url("../images/sprite-icon.png") no-repeat 0 0;
+                    content: '';
+                }
+            }
+            &.item1 a:before {
+                background-position: 0 -40px;
+            }
+            &.item2 a:before {
+                background-position: -120px -40px;
+            }
+            &.item3 a:before {
+                background-position: 0 -160px;
+            }
+            &.item4 a:before {
+                background-position: -120px -160px;
+            }
+        }
+        .item-depth {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 19px;
+            width: 262px;
+            height: 100%;
+            padding: 45px 14px 45px 114px;
+            &:before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 14px;
+                width: 87px;
+                height: 84px;
+                margin: auto;
+                background: url("../images/sprite-icon.png") no-repeat 0 0;
+                content: '';
+            }
+            strong {
+                display: inline-block;
+                margin-bottom: 11px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid #fff;
+                font-size: 20px;
+                color: #fff;
+                letter-spacing: -1px;
+            }
+            li {
+                padding-left: 3px;
+                line-height: 24px;
+                &:before {
+                    display: inline-block;
+                    width: 1px;
+                    height: 1px;
+                    margin-right: 8px;
+                    background-color: #fff;
+                    vertical-align: super;
+                    content: '';
+                }
+                a {
+                    font-size: 15px;
+                    color: #fff;
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+        }
+        .item1 {
+            .item-depth {
+                background-color: #ffc96c;
+                &:before {
+                    background-position: 0 -40px;
+                }
+            }
+        }
+        .item2 {
+            .item-depth {
+                background-color: #bbd484;
+                &:before {
+                    background-position: -120px -40px;
+                }
+            }
+        }
+        .item3 {
+            .item-depth {
+                background-color: #93b5ed;
+                &:before {
+                    background-position: 0 -160px;
+                }
+            }
+        }
+        .item4 {
+            .item-depth {
+                background-color: #fa9b85;
+                &:before {
+                    background-position: -120px -160px;
+                }
+            }
+        }
+        > li:hover .item-depth {
+            display: block;
+        }
+    }
+}
+// 공지사항
+.main-board {
+    @include clearfix;
+    width: 1200px;
+    margin: 55px auto;
+    .board-box {
+        position: relative;
         float: left;
-        width: 100%;
-        height: 410px;
-        //min-width: 1200px;
-        background-position: 50% 0;
+        width: 33.33%;
+        padding: 0 19px;
+        .more {
+            position: absolute;
+            top: 0;
+            right: 28px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 42px;
+            color: #fff;
+        }
+    }
+    h3 {
+        padding: 11px 0 9px;
+        text-align: center;
+        &:after {
+            display: block;
+            height: 22px;
+            margin: auto;
+            background: url("../images/sprite-text.png") no-repeat 0 0;
+            content: '';
+        }
+    }
+    .board1 {
+        h3 {
+            background-color: #77aa0a;
+            &:after {
+                width: 80px;
+                background-position: 0 0;
+            }
+        }
+    }
+    .board2 {
+        h3 {
+            background-color: #286cdb;
+            &:after {
+                width: 127px;
+                background-position: 0 -40px;
+            }
+        }
+    }
+    .board3 {
+        h3 {
+            background-color: #fd8a03;
+            &:after {
+                width: 73px;
+                background-position: 0 -80px;
+            }
+        }
+    }
+    .board-list {
+        margin-top: 15px;
+        li {
+            @include clearfix;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 44px;
+            a {
+                display: block;
+                overflow: hidden;
+                float: left;
+                width: 250px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .date {
+                float: right;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// 유관부서
+.main-department {
+    ul {
+        display: block;
+        li {
+            float: left;
+        }
     }
 }
 

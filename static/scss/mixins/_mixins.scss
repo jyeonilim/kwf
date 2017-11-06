@@ -49,3 +49,9 @@
     -moz-box-sizing: $boxmodel;
     box-sizing: $boxmodel;
 }
+
+// Text Shadow
+@mixin text-shadow($shadow...) {
+    -webkit-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
