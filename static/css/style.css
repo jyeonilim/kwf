@@ -80,7 +80,6 @@ button {
 *******************************/
 .wrap {
   width: 100%;
-  min-width: 1200px;
 }
 
 .wrap:before, .wrap:after {
@@ -95,12 +94,22 @@ button {
 /*******************************
     Header
 *******************************/
-.header:before, .header:after {
+.header {
+  padding: 14px 0 28px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .header-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .header-inner:before, .header .header-inner:after {
   content: " ";
   display: table;
 }
 
-.header:after {
+.header .header-inner:after {
   clear: both;
 }
 
@@ -117,10 +126,12 @@ button {
 
 .header .quick-access {
   float: right;
+  margin-top: 10px;
 }
 
 .header .quick-access .access-link {
   float: left;
+  margin: 5px 18px 5px 0;
 }
 
 .header .quick-access .access-link li {
@@ -145,8 +156,19 @@ button {
 }
 
 .header .quick-access .search-box {
+  position: relative;
   float: left;
+  padding: 4px 24px 4px 4px;
   border: 1px solid #ddd;
+}
+
+.header .quick-access .search-box .btn-search {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 16px;
+  height: 17px;
+  background: url("../images/sprite-icon.png") no-repeat 0 0;
 }
 
 /*******************************
@@ -158,7 +180,7 @@ button {
 }
 
 .footer .footer-inner {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -264,28 +286,115 @@ button {
 /*******************************
     Main
 *******************************/
-.main-visual ul {
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
   margin: 0;
   padding: 0;
-  list-style: none;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: " ";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  display: none;
+}
+
+.slick-initialized .slick-slide {
   display: block;
 }
 
-.main-visual ul li {
-  float: left;
-  width: 100%;
-  height: 410px;
+.main-visual {
+  position: relative;
   min-width: 1200px;
-  background-position: 0 0;
+}
+
+.main-visual .slick-slide {
+  height: 410px;
+  background-position: 50% 0;
+}
+
+.main-visual .slick-dots {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  margin-right: -525px;
+}
+
+.main-visual .slick-dots li {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.main-visual .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #acacad;
+  font-size: 0;
+  line-height: 17px;
+}
+
+.main-visual .slick-dots li.slick-active button {
+  background-color: #73a2ef;
 }
 
 .main-gnb {
-  margin-top: 39px;
+  width: 1200px;
+  margin: 39px auto 0;
 }
 
 .main-gnb .gnb-item {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0 -19px;
 }
 
 .main-gnb .gnb-item:before, .main-gnb .gnb-item:after {
@@ -345,9 +454,9 @@ button {
   position: absolute;
   top: 0;
   left: 19px;
-  width: 262px;
+  width: 275px;
   height: 100%;
-  padding: 45px 14px 45px 114px;
+  padding: 45px 14px 45px 115px;
 }
 
 .main-gnb .gnb-item .item-depth:before {
@@ -367,7 +476,7 @@ button {
   margin-bottom: 11px;
   padding-bottom: 6px;
   border-bottom: 1px solid #fff;
-  font-size: 20px;
+  font-size: 21px;
   color: #fff;
   letter-spacing: -1px;
 }
@@ -434,7 +543,7 @@ button {
 
 .main-board {
   width: 1200px;
-  margin: 55px auto;
+  margin: 55px auto 0;
 }
 
 .main-board:before, .main-board:after {
@@ -444,6 +553,10 @@ button {
 
 .main-board:after {
   clear: both;
+}
+
+.main-board .board-inner {
+  margin: 0 -19px;
 }
 
 .main-board .board-box {
@@ -536,12 +649,34 @@ button {
   font-size: 13px;
 }
 
-.main-department ul {
-  display: block;
+.main-department {
+  position: relative;
+  width: 1200px;
+  margin: 60px auto 114px;
+  padding: 0 50px;
 }
 
-.main-department ul li {
-  float: left;
+.main-department .slick-slide {
+  text-align: center;
+}
+
+.main-department .slick-arrow {
+  position: absolute;
+  top: 8px;
+  width: 14px;
+  height: 25px;
+  background: url("../images/sprite-icon.png") no-repeat 0 0;
+  font-size: 0;
+}
+
+.main-department .slick-prev {
+  left: 0;
+  background-position: -40px 0;
+}
+
+.main-department .slick-next {
+  right: 0;
+  background-position: -80px 0;
 }
 
 /*******************************

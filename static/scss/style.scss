@@ -27,7 +27,6 @@ button {
 .wrap {
     @include clearfix;
     width: 100%;
-    min-width: 1200px;
 }
 .content {}
 
@@ -35,7 +34,13 @@ button {
     Header
 *******************************/
 .header {
-    @include clearfix;
+    padding: 14px 0 28px;
+    border-bottom: 1px solid #ccc;
+    .header-inner {
+        @include clearfix;
+        width: 1200px;
+        margin: 0 auto;
+    }
     .logo {
         float: left;
         a {
@@ -47,8 +52,10 @@ button {
     }
     .quick-access {
         float: right;
+        margin-top: 10px;
         .access-link {
             float: left;
+            margin: 5px 18px 5px 0;
             li {
                 display: inline-block;
                 font-size: 12px;
@@ -69,8 +76,18 @@ button {
             }
         }
         .search-box {
+            position: relative;
             float: left;
+            padding: 4px 24px 4px 4px;
             border: 1px solid #ddd;
+            .btn-search {
+                position: absolute;
+                top:4px;
+                right: 4px;
+                width: 16px;
+                height: 17px;
+                background: url("../images/sprite-icon.png") no-repeat 0 0;
+            }
         }
     }
 }
@@ -83,7 +100,7 @@ button {
     background-color: #393939;
     .footer-inner {
         @include clearfix;
-        max-width: 1200px;
+        width: 1200px;
         margin: 0 auto;
     }
     .foot-logo {
@@ -160,28 +177,91 @@ button {
 /*******************************
     Main
 *******************************/
-.main-visual {
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
+    @include clearfix;
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    display: none;
+    .slick-initialized & {
         display: block;
+    }
+}
+.main-visual {
+    position: relative;
+    min-width: 1200px;
+    .slick-slide {
+        height: 410px;
+        background-position: 50% 0;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+        margin-right: -525px;
         li {
-            float: left;
-            width: 100%;
-            height: 410px;
-            min-width: 1200px;
-            background-position: 0 0;
+            display: inline-block;
+            padding: 0 4px;
+            button {
+                width: 14px;
+                height: 14px;
+                @include border-radius(50%);
+                background-color: #acacad;
+                font-size: 0;
+                line-height: 17px;
+            }
+            &.slick-active button {
+                background-color: #73a2ef;
+            }
         }
     }
 }
 // 메인 메뉴
 .main-gnb {
-    margin-top: 39px;
+    width: 1200px;
+    margin: 39px auto 0;
     .gnb-item {
         @include clearfix;
-        width: 1200px;
-        margin: 0 auto;
+        margin: 0 -19px;
         > li {
             position: relative;
             float: left;
@@ -223,9 +303,9 @@ button {
             position: absolute;
             top: 0;
             left: 19px;
-            width: 262px;
+            width: 275px;
             height: 100%;
-            padding: 45px 14px 45px 114px;
+            padding: 45px 14px 45px 115px;
             &:before {
                 position: absolute;
                 top: 0;
@@ -242,7 +322,7 @@ button {
                 margin-bottom: 11px;
                 padding-bottom: 6px;
                 border-bottom: 1px solid #fff;
-                font-size: 20px;
+                font-size: 21px;
                 color: #fff;
                 letter-spacing: -1px;
             }
@@ -308,7 +388,10 @@ button {
 .main-board {
     @include clearfix;
     width: 1200px;
-    margin: 55px auto;
+    margin: 55px auto 0;
+    .board-inner {
+        margin: 0 -19px;
+    }
     .board-box {
         position: relative;
         float: left;
@@ -387,11 +470,28 @@ button {
 
 // 유관부서
 .main-department {
-    ul {
-        display: block;
-        li {
-            float: left;
-        }
+    position: relative;
+    width: 1200px;
+    margin: 60px auto 114px;
+    padding: 0 50px;
+    .slick-slide {
+        text-align: center;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 8px;
+        width: 14px;
+        height: 25px;
+        background: url("../images/sprite-icon.png") no-repeat 0 0;
+        font-size: 0;
+    }
+    .slick-prev {
+        left: 0;
+        background-position: -40px 0;
+    }
+    .slick-next {
+        right: 0;
+        background-position: -80px 0;
     }
 }
 

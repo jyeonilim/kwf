@@ -8,23 +8,25 @@
     <title>한국여성어업인연합회</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <script type="text/javascript" src="../static/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.carouFredSel.js"></script>
+    <script type="text/javascript" src="../static/js/slick.min.js"></script>
     <script type="text/javascript" src="../static/js/common.js"></script>
 </head>
 <body>
 <div class="wrap">
     <!-- Header -->
     <div class="header">
-        <h1 class="logo"><a href="#"><span class="sr-only">한국여성어업인연합회</span></a></h1>
-        <div class="quick-access">
-            <ul class="access-link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-            </ul>
-            <div class="search-box">
-                <input type="text" class="form-control">
-                <a ref="#"><span class="sr-only">검색</span></a>
+        <div class="header-inner">
+            <h1 class="logo"><a href="#"><span class="sr-only">한국여성어업인연합회</span></a></h1>
+            <div class="quick-access">
+                <ul class="access-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" class="form-control">
+                    <a ref="#" class="btn-search"><span class="sr-only">검색</span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -32,14 +34,14 @@
     <!-- Content -->
     <div class="content">
         <!-- 메인 롤링 배너 -->
-        <ul class="main-visual">
-            <li style="background-image:url('../static/images/main-visual1.jpg');">
+        <div class="main-visual">
+            <div style="background-image:url('../static/images/main-visual1.jpg');">
                 <span class="sr-only">어촌의 복지 증진과 지역사회 발전에 기여하는 한국여성어업인연합회</span>
-            </li>
-            <li style="background-image:url('../static/images/main-visual1.jpg');">
+            </div>
+            <div style="background-image:url('../static/images/main-visual1.jpg');">
                 <span class="sr-only">어촌의 복지 증진과 지역사회 발전에 기여하는 한국여성어업인연합회</span>
-            </li>
-        </ul>
+            </div>
+        </div>
         <!-- 메인 롤링 배너 //end -->
         <!-- 메인 메뉴 -->
         <div class="main-gnb">
@@ -96,101 +98,106 @@
         <!-- 메인 메뉴 //end -->
         <!-- 게시판 -->
         <div class="main-board">
-            <!-- 공지사항 -->
-            <div class="board-box board1">
-                <h3><span class="sr-only">공지사항</span></h3>
-                <ul class="board-list">
-                    <li>
-                        <a href="#">2017년 소상공인 성장전략 심포지엄</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">제6회 성콩컨설턴트아카데미!!</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">1급 소상공인 지도사 합격자명단</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                </ul>
-                <a href="#" class="more">+</a>
+            <div class="board-inner">
+                <!-- 공지사항 -->
+                <div class="board-box board1">
+                    <h3><span class="sr-only">공지사항</span></h3>
+                    <ul class="board-list">
+                        <li>
+                            <a href="#">2017년 소상공인 성장전략 심포지엄</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">제6회 성콩컨설턴트아카데미!!</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">1급 소상공인 지도사 합격자명단</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">+</a>
+                </div>
+                <!-- 공지사항 //end -->
+                <!-- 분회별 게시판 -->
+                <div class="board-box board2">
+                    <h3><span class="sr-only">분회별 게시판</span></h3>
+                    <ul class="board-list">
+                        <li>
+                            <a href="#">2017년 소상공인 성장전략 심포지엄</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">제6회 성콩컨설턴트아카데미!!</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">1급 소상공인 지도사 합격자명단</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">+</a>
+                </div>
+                <!-- 분회별 게시판 //end -->
+                <!-- 자료실 -->
+                <div class="board-box board3">
+                    <h3><span class="sr-only">자료실</span></h3>
+                    <ul class="board-list">
+                        <li>
+                            <a href="#">2017년 소상공인 성장전략 심포지엄</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
+                            <span class="date">2016-11-17</span>
+                        </li>
+                        <li>
+                            <a href="#">제6회 성콩컨설턴트아카데미!!</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                        <li>
+                            <a href="#">1급 소상공인 지도사 합격자명단</a>
+                            <span class="date">2017-09-29</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">+</a>
+                </div>
+                <!-- 자료실 //end -->
             </div>
-            <!-- 공지사항 //end -->
-            <!-- 분회별 게시판 -->
-            <div class="board-box board2">
-                <h3><span class="sr-only">분회별 게시판</span></h3>
-                <ul class="board-list">
-                    <li>
-                        <a href="#">2017년 소상공인 성장전략 심포지엄</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">제6회 성콩컨설턴트아카데미!!</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">1급 소상공인 지도사 합격자명단</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                </ul>
-                <a href="#" class="more">+</a>
-            </div>
-            <!-- 분회별 게시판 //end -->
-            <!-- 자료실 -->
-            <div class="board-box board3">
-                <h3><span class="sr-only">자료실</span></h3>
-                <ul class="board-list">
-                    <li>
-                        <a href="#">2017년 소상공인 성장전략 심포지엄</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">(사)한국소상공인컨설팅협회, ‘2013 소비자가 성...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">땡큐맘치킨.통파이브, 소비자가 뽑은 상생 브랜...</a>
-                        <span class="date">2016-11-17</span>
-                    </li>
-                    <li>
-                        <a href="#">제6회 성콩컨설턴트아카데미!!</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                    <li>
-                        <a href="#">1급 소상공인 지도사 합격자명단</a>
-                        <span class="date">2017-09-29</span>
-                    </li>
-                </ul>
-                <a href="#" class="more">+</a>
-            </div>
-            <!-- 자료실 //end -->
         </div>
         <!-- 게시판 //end -->
         <!-- 유관부서 롤링 배너 -->
         <div class="main-department">
-            <ul>
-                <li><a href="#"><img src="../static/images/department1.jpg" alt="해양수산부"></a></li>
-                <li><a href="#"><img src="../static/images/department1.jpg" alt="수산정보포털"></a></li>
-                <li><a href="#"><img src="../static/images/department1.jpg" alt="수"></a></li>
-                <li><a href="#"><img src="../static/images/department1.jpg" alt="한국해양수산개발"></a></li>
-                <li><a href="#"><img src="../static/images/department1.jpg" alt="한국어촌어협회"></a></li>
-            </ul>
+            <div><a href="#"><img src="../static/images/department1.jpg" alt="해양수산부"></a></div>
+            <div><a href="#"><img src="../static/images/department2.jpg" alt="수산정보포털"></a></div>
+            <div><a href="#"><img src="../static/images/department3.jpg" alt="수협"></a></div>
+            <div><a href="#"><img src="../static/images/department4.jpg" alt="한국해양수산개발"></a></div>
+            <div><a href="#"><img src="../static/images/department5.jpg" alt="한국어촌어항협회"></a></div>
+            <div><a href="#"><img src="../static/images/department1.jpg" alt="해양수산부"></a></div>
+            <div><a href="#"><img src="../static/images/department2.jpg" alt="수산정보포털"></a></div>
+            <div><a href="#"><img src="../static/images/department3.jpg" alt="수협"></a></div>
+            <div><a href="#"><img src="../static/images/department4.jpg" alt="한국해양수산개발"></a></div>
+            <div><a href="#"><img src="../static/images/department5.jpg" alt="한국어촌어항협회"></a></div>
         </div>
         <!-- 유관부서 롤링 배너 //end -->
     </div>
