@@ -312,6 +312,12 @@ button {
                 color: #333;
                 text-align: center;
             }
+            &:hover, &.active {
+                background-color: #ff8b02;
+                a {
+                    color: #fff;
+                }
+            }
         }
     }
 }

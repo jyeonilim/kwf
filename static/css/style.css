@@ -624,6 +624,14 @@ button {
   text-align: center;
 }
 
+.tab-wrap .tab li:hover, .tab-wrap .tab li.active {
+  background-color: #ff8b02;
+}
+
+.tab-wrap .tab li:hover a, .tab-wrap .tab li.active a {
+  color: #fff;
+}
+
 .page-text {
   margin-bottom: 50px;
   font: bold 22px "MalgunGothic", sans-serif;
