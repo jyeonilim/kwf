@@ -13,10 +13,9 @@
 // Sprites Icon
 @mixin sp-icon($left,$top) {
     display: inline-block;
-    background: url("../../images/sprite-icon.png") repeat $left $top;
+    background: url("../images/sprite-icon.png") no-repeat $left $top;
     line-height: 0;
     color: transparent;
-    vertical-align: middle;
 }
 @mixin sp-size($width,$height) {
     width: $width;
@@ -48,10 +47,4 @@
     -webkit-box-sizing: $boxmodel;
     -moz-box-sizing: $boxmodel;
     box-sizing: $boxmodel;
-}
-
-// Text Shadow
-@mixin text-shadow($shadow...) {
-    -webkit-text-shadow: $shadow;
-    text-shadow: $shadow;
 }

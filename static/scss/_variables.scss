@@ -16,11 +16,11 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $white:                  lighten($gray-base, 100%) !default; // #fff
 
 $brand-default:         #939598 !default;
-$brand-primary:         #4aaf9d !default;
+$brand-primary:         #015df4 !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-danger:          #ff3405 !default;
 
 
 //== Scaffolding
@@ -45,4 +45,5 @@ $link-hover-decoration: none !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-base:        'Nanum Gothic', sans-serif !default;
+$font-family-second:        'MalgunGothic', sans-serif !default;
 $font-size-base:          14px !default;

@@ -1,0 +1,48 @@
+/*******************************
+    Button
+*******************************/
+.btn {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    line-height: 31px;
+    vertical-align: middle;
+}
+.btn-sm {}
+.btn-lg {
+    font-size: 30px;
+    line-height: 60px;
+}
+.btn-primary {
+    border: 1px solid #286cdb;
+    background-color: #286cdb;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
+.btn-gray {
+    border: 1px solid #666;
+    background-color: #666;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
+.btn-align-center {
+    text-align: center;
+}
+
+/*******************************
+    Image Button
+*******************************/
+.btn-search {
+    @include sp-icon(0,0);
+    @include sp-size(16px,17px);
+}
+.btn-calendar {
+    @include sp-icon(-160px,0);
+    @include sp-size(30px,27px);
+    vertical-align: -6px;
+}
