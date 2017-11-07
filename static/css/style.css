@@ -1038,15 +1038,44 @@ button {
 /*******************************
     교육안내 및 신청
 *******************************/
-.btn-application-box .btn {
+.info-content {
+  padding-left: 57px;
+}
+
+.info-content li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #555;
+  text-indent: -24px;
+}
+
+.info-content li:before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 10px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 13px solid #77aa0a;
+  content: '';
+}
+
+.apply-process {
+  width: 1200px;
+  height: 227px;
+  margin-top: 35px;
+  background: url("../images/apply-process.jpg") no-repeat 0 0;
+}
+
+.btn-apply-box .btn {
   width: 160px;
 }
 
-.application-complete-wrap {
+.apply-complete-wrap {
   margin: 150px 0 100px;
 }
 
-.application-complete {
+.apply-complete {
   width: 912px;
   margin: 0 auto 50px;
   padding: 88px 70px 70px;
@@ -1062,16 +1091,16 @@ button {
   color: #333;
 }
 
-.application-complete:before, .application-complete:after {
+.apply-complete:before, .apply-complete:after {
   content: " ";
   display: table;
 }
 
-.application-complete:after {
+.apply-complete:after {
   clear: both;
 }
 
-.application-complete:before {
+.apply-complete:before {
   float: left;
   display: inline-block;
   width: 292px;
@@ -1081,7 +1110,7 @@ button {
   content: '';
 }
 
-.application-complete strong {
+.apply-complete strong {
   font-size: 25px;
 }
 
