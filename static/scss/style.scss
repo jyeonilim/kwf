@@ -658,6 +658,18 @@ button {
 /*******************************
     교육안내 및 신청
 *******************************/
+// 교육 목표 및 방향
+.edu-purpose {
+    width: 1200px;
+    height: 904px;
+    margin: 60px 0 167px;
+    background: url("../images/purpose1.jpg") no-repeat 0 0;
+}
+.edu-direction {
+    width: 1200px;
+    height: 1336px;
+    background: url("../images/purpose2.jpg") no-repeat 0 0;
+}
 // 교육 과정 안내
 .info-content {
     padding-left: 57px;
