@@ -5,3 +5,10 @@
     border: 1px solid #aaa;
     line-height: 31px;
 }
+.radiobox {
+    margin-right: 50px;
+    input[type=radio], input[type=checkbox] {
+        margin-right: 12px;
+        vertical-align: 2px;
+    }
+}

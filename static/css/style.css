@@ -83,6 +83,16 @@ table {
   color: #fff;
 }
 
+.btn-second {
+  border: 1px solid #ff8b02;
+  background-color: #ff8b02;
+  color: #fff;
+}
+
+.btn-second:hover {
+  color: #fff;
+}
+
 .btn-gray {
   border: 1px solid #666;
   background-color: #666;
@@ -127,6 +137,15 @@ table {
   line-height: 31px;
 }
 
+.radiobox {
+  margin-right: 50px;
+}
+
+.radiobox input[type=radio], .radiobox input[type=checkbox] {
+  margin-right: 12px;
+  vertical-align: 2px;
+}
+
 /*******************************
     Table
 *******************************/
@@ -138,7 +157,7 @@ table {
 
 .table th, .table td {
   border: 1px solid #ddd;
-  font-family: "MalgunGothic", sans-serif;
+  font-family: "MalgunGothic", "맑은 고딕", sans-serif;
 }
 
 .table th {
@@ -193,10 +212,11 @@ table {
   height: 32px;
   margin: 0 1px;
   border: 1px solid #d4d4d4;
-  font: bold 18px/34px "MalgunGothic", sans-serif;
+  font: bold 18px/34px "MalgunGothic", "맑은 고딕", sans-serif;
   color: #333;
   text-align: center;
   cursor: pointer;
+  line-height: 28px\9;
 }
 
 .pagination .page.active, .pagination .page:hover {
@@ -228,6 +248,7 @@ button {
 *******************************/
 .wrap {
   width: 100%;
+  min-width: 1200px;
 }
 
 .wrap:before, .wrap:after {
@@ -240,7 +261,7 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto 224px;
 }
 
@@ -330,7 +351,7 @@ button {
 }
 
 .sub-top .gnb-wrap .gnb {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -361,7 +382,7 @@ button {
 }
 
 .sub-top .sub-text {
-  max-width: 1200px;
+  width: 1200px;
   margin: 170px auto 0;
   font-weight: bold;
   font-size: 40px;
@@ -527,7 +548,7 @@ button {
 .second-title {
   margin-bottom: 10px;
   font-size: 22px;
-  font-family: "MalgunGothic", sans-serif;
+  font-family: "MalgunGothic", "맑은 고딕", sans-serif;
 }
 
 .second-title:before {
@@ -612,8 +633,7 @@ button {
   display: table;
   table-layout: fixed;
   border-collapse: collapse;
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -624,10 +644,11 @@ button {
 
 .tab-wrap .tab li a {
   display: block;
-  padding: 17px 0 12px;
-  font: bold 18px "MalgunGothic", sans-serif;
+  height: 50px;
+  font: bold 18px/54px "MalgunGothic", "맑은 고딕", sans-serif;
   color: #333;
   text-align: center;
+  line-height: 48px\9;
 }
 
 .tab-wrap .tab li:hover, .tab-wrap .tab li.active {
@@ -638,9 +659,54 @@ button {
   color: #fff;
 }
 
+.tabs {
+  margin: 0 -2px 50px;
+}
+
+.tabs:before, .tabs:after {
+  content: " ";
+  display: table;
+}
+
+.tabs:after {
+  clear: both;
+}
+
+.tabs li {
+  float: left;
+  padding: 0 2px;
+}
+
+.tabs li a {
+  display: block;
+  padding: 9px 0 6px;
+  border: 1px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
+  background-color: #f3f3f3;
+  font: bold 18px "MalgunGothic", "맑은 고딕", sans-serif;
+  color: #333;
+  letter-spacing: -1.3px;
+  text-align: center;
+  padding: 6px 0 9px\9;
+  font-size: 17px\9;
+  letter-spacing: -2.7px\9;
+}
+
+.tabs.tab-fishing li {
+  width: 10%;
+}
+
+.tabs ~ .tab-content {
+  display: none;
+}
+
+.tabs ~ .tab-content.fishing1 {
+  display: block;
+}
+
 .page-text {
   margin-bottom: 50px;
-  font: bold 22px "MalgunGothic", sans-serif;
+  font: bold 22px "MalgunGothic", "맑은 고딕", sans-serif;
 }
 
 .text-blue {

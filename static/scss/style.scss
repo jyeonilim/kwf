@@ -27,10 +27,11 @@ button {
 .wrap {
     @include clearfix;
     width: 100%;
+    min-width: 1200px;
 }
 .content {}
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto 224px;
 }
 
@@ -98,7 +99,7 @@ button {
         background-color: rgba(255,139,2,.3);
         .gnb {
             @include clearfix;
-            max-width: 1200px;
+            width: 1200px;
             margin: 0 auto;
             padding: 20px 0;
             li {
@@ -117,7 +118,7 @@ button {
         }
     }
     .sub-text {
-        max-width: 1200px;
+        width: 1200px;
         margin: 170px auto 0;
         font-weight: bold;
         font-size: 40px;
@@ -304,18 +305,19 @@ button {
         display: table;
         table-layout: fixed;
         border-collapse: collapse;
-        width: 100%;
-        max-width: 1200px;
+        width: 1200px;
         margin: 0 auto;
         li {
             display: table-cell;
             border: 2px solid #ddd;
             a {
                 display: block;
-                padding: 17px 0 12px;
-                font: bold 18px $font-family-second;
+                height: 50px;
+                //padding: 17px 0 12px;
+                font: bold 18px/54px $font-family-second;
                 color: #333;
                 text-align: center;
+                line-height: 48px\9;
             }
             &:hover, &.active {
                 background-color: #ff8b02;
@@ -323,6 +325,39 @@ button {
                     color: #fff;
                 }
             }
+        }
+    }
+}
+.tabs {
+    @include clearfix;
+    margin: 0 -2px 50px;
+    li {
+        float: left;
+        padding: 0 2px;
+        a {
+            display: block;
+            padding: 9px 0 6px;
+            border: 1px solid #d9d9d9;
+            border-bottom: 3px solid #d9d9d9;
+            background-color: #f3f3f3;
+            font: bold 18px $font-family-second;
+            color: #333;
+            letter-spacing: -1.3px;
+            text-align: center;
+            padding: 6px 0 9px\9;
+            font-size: 17px\9;
+            letter-spacing: -2.7px\9;
+        }
+    }
+    &.tab-fishing {
+        li {
+            width: 10%;
+        }
+    }
+    ~ .tab-content {
+        display: none;
+        &.fishing1 {
+            display: block;
         }
     }
 }
