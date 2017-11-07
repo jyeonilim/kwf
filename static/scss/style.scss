@@ -88,30 +88,35 @@ button {
         }
     }
 }
-.gnb-wrap {
+.sub-top {
     height: 432px;
     margin-top: 18px;
     background: url("../images/bg-gnb.jpg") no-repeat 50% 0;
-    .gnb {
-        @include clearfix;
-        max-width: 1200px;
+    .gnb-wrap {
+        max-width: 1900px;
         margin: 0 auto;
-        padding-top: 20px;
-        li {
-            float: left;
-            width: 20%;
-            font-weight: bold;
-            font-size: 22px;
-            text-align: center;
-            a {
-                color: #333;
-                &:hover {
-                    color: #fff;
+        background-color: rgba(255,139,2,.3);
+        .gnb {
+            @include clearfix;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            li {
+                float: left;
+                width: 20%;
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                a {
+                    color: #333;
+                    &:hover {
+                        color: #fff;
+                    }
                 }
             }
         }
     }
-    .gnb-text {
+    .sub-text {
         max-width: 1200px;
         margin: 170px auto 0;
         font-weight: bold;
