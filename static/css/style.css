@@ -1121,6 +1121,99 @@ button {
 /*******************************
     연합회소개
 *******************************/
+.greeting .slogan {
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.greeting .slogan strong {
+  color: #02a6fd;
+}
+
+.greeting .image-president {
+  float: right;
+  padding: 40px 28px 50px 50px;
+}
+
+.greeting .image-president img {
+  -webkit-box-shadow: 7px 7px 14px #dcd2c6;
+  box-shadow: 7px 7px 14px #dcd2c6;
+}
+
+.greeting .text-greeting {
+  font-size: 20px;
+  line-height: 36px;
+  color: #444;
+}
+
+.greeting .text-greeting p {
+  margin-bottom: 40px;
+}
+
+.greeting .text-greeting .president-name {
+  float: right;
+  margin-top: 25px;
+  font-size: 32px;
+  color: #000;
+}
+
+.history {
+  border-bottom: 1px solid #eee;
+}
+
+.history dd {
+  position: relative;
+  display: table;
+  width: 100%;
+  min-height: 185px;
+  padding-left: 200px;
+  border-top: 1px solid #eee;
+}
+
+.history dd .year {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  border: 9px solid #01a7fd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #555864;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 3.96;
+  color: #fff;
+  text-align: center;
+}
+
+.history dd .year.history19 {
+  border-color: #9fd817;
+}
+
+.history dd .history-list {
+  display: table-cell;
+  padding: 15px 0;
+  vertical-align: middle;
+}
+
+.history dd .history-list li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #444;
+}
+
+.history dd .history-list li span {
+  display: inline-block;
+  width: 135px;
+}
+
 .organization {
   padding: 100px 0 245px;
   border: 2px solid #eee;

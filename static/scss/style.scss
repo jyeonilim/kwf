@@ -701,6 +701,85 @@ button {
 /*******************************
     연합회소개
 *******************************/
+// 인사말
+.greeting {
+    .slogan {
+        margin-bottom: 60px;
+        font-size: 48px;
+        line-height: 60px;
+        strong {
+            color: #02a6fd;
+        }
+    }
+    .image-president {
+        float: right;
+        padding: 40px 28px 50px 50px;
+        img {
+            @include box-shadow(7px 7px 14px #dcd2c6);
+        }
+    }
+    .text-greeting {
+        font-size: 20px;
+        line-height: 36px;
+        color: #444;
+        p {
+            margin-bottom: 40px;
+        }
+        .president-name {
+            float: right;
+            margin-top: 25px;
+            font-size: 32px;
+            color: #000;
+        }
+    }
+}
+// 연혁
+.history {
+    border-bottom: 1px solid #eee;
+    dd {
+        position: relative;
+        display: table;
+        width: 100%;
+        min-height: 185px;
+        padding-left: 200px;
+        border-top: 1px solid #eee;
+        .year {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 125px;
+            height: 125px;
+            margin: auto;
+            border: 9px solid #01a7fd;
+            @include border-radius(50%);
+            background-color: #555864;
+            font-weight: bold;
+            font-size: 27px;
+            line-height: (125-18)/27;
+            color: #fff;
+            text-align: center;
+            &.history19 {
+                border-color: #9fd817;
+            }
+        }
+        .history-list {
+            display: table-cell;
+            padding: 15px 0;
+            vertical-align: middle;
+            li {
+                font-size: 20px;
+                line-height: 30px;
+                color: #444;
+                span {
+                    display: inline-block;
+                    width: 135px;
+                }
+            }
+        }
+    }
+}
 // 조직현황
 .organization {
     padding: 100px 0 245px;
