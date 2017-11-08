@@ -170,6 +170,7 @@ table {
   padding: 15px 0;
   font-size: 18px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .table td.align-left {
@@ -704,6 +705,11 @@ button {
 .page-text {
   margin-bottom: 50px;
   font: bold 22px "MalgunGothic", "맑은 고딕", sans-serif;
+}
+
+.image-shadow {
+  -webkit-box-shadow: 2px 4px 11px #777;
+  box-shadow: 2px 4px 11px #777;
 }
 
 .text-blue {

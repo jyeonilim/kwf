@@ -365,6 +365,9 @@ button {
     margin-bottom: 50px;
     font: bold 22px $font-family-second;
 }
+.image-shadow {
+    @include box-shadow(2px 4px 11px #777);
+}
 .text-blue {
     color: $brand-primary;
 }
