@@ -717,6 +717,30 @@ button {
         content: '';
     }
 }
+// 오시는 길
+.map {
+    width: 1200px;
+    height: 463px;
+    border: 1px solid #ddd;
+}
+.contact-box {
+    margin-top: 55px;
+    .second-title {
+        font-size: 35px;
+        &:before {
+            width: 36px;
+            height: 37px;
+            background-position: -240px 0;
+        }
+    }
+    .contact-list {
+        margin-top: 10px;
+        padding-left: 42px;
+        font-size: 20px;
+        line-height: 45px;
+        color: #333;
+    }
+}
 
 /*******************************
     회원현황
