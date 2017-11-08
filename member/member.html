@@ -79,12 +79,12 @@
                     <tbody>
                     <tr>
                         <th>선택조건</th>
-                        <td>
+                        <td class="select-search">
                             <label class="radiobox">
-                                <input type="radio" name="select-condition" checked> 지역별
+                                <input type="radio" name="classify" value="regional" checked> 지역별
                             </label>
                             <label class="radiobox">
-                                <input type="radio" name="select-condition"> 종사어업별
+                                <input type="radio" name="classify" value="industry"> 종사어업별
                             </label>
                         </td>
                     </tr>
@@ -102,21 +102,21 @@
                 </table>
             </section>
             <!-- 회원 검색 //end -->
-            <!-- 종사어업별 회원현황 -->
-            <div>
-                <ul class="tabs tab-fishing">
+            <!-- 지역별 회원현황 -->
+            <div class="classify-content regional">
+                <ul class="tabs tab-regional">
                     <li><a href="#">전체</a></li>
-                    <li><a href="#">양식어업</a></li>
-                    <li><a href="#">어선어업</a></li>
-                    <li><a href="#">맨손(나잠)어업</a></li>
-                    <li><a href="#">연승/연안어업</a></li>
-                    <li><a href="#">근해어업</a></li>
-                    <li><a href="#">자망어업</a></li>
-                    <li><a href="#">마을어업</a></li>
-                    <li><a href="#">채낚기및통발어업</a></li>
-                    <li><a href="#">기타</a></li>
+                    <li><a href="#">경인</a></li>
+                    <li><a href="#">강원</a></li>
+                    <li><a href="#">충청</a></li>
+                    <li><a href="#">전북</a></li>
+                    <li><a href="#">전남</a></li>
+                    <li><a href="#">경북</a></li>
+                    <li><a href="#">경남</a></li>
+                    <li><a href="#">제주</a></li>
+                    <li><a href="#">부산</a></li>
                 </ul>
-                <div class="tab-content fishing1">
+                <div class="tab-content regional1">
                     <table class="table" summary="지역별 회원현황 게시판">
                         <thead>
                         <tr>
@@ -174,11 +174,100 @@
                     </div>
                     <!-- Pagination //end -->
                 </div>
-                <div class="tab-content fishing2">
-                    2
-                </div>
+                <div class="tab-content regional2">경인</div>
+                <div class="tab-content regional3">강원</div>
+                <div class="tab-content regional4">충청</div>
+                <div class="tab-content regional5">전북</div>
+                <div class="tab-content regional6">전남</div>
+                <div class="tab-content regional7">경북</div>
+                <div class="tab-content regional8">경남</div>
+                <div class="tab-content regional9">제주</div>
+                <div class="tab-content regional10">부산</div>
             </div>
-            <!-- 종사어업별 //end -->
+            <!-- 지역별 회원현황 //end -->
+            <!-- 종사어업별 회원현황 -->
+            <div class="classify-content industry">
+                <ul class="tabs tab-industry">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">양식어업</a></li>
+                    <li><a href="#">어선어업</a></li>
+                    <li><a href="#">맨손(나잠)어업</a></li>
+                    <li><a href="#">연승/연안어업</a></li>
+                    <li><a href="#">근해어업</a></li>
+                    <li><a href="#">자망어업</a></li>
+                    <li><a href="#">마을어업</a></li>
+                    <li><a href="#">채낚기및통발어업</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+                <div class="tab-content industry1">
+                    <table class="table" summary="지역별 회원현황 게시판">
+                        <thead>
+                        <tr>
+                            <th>종사어업</th>
+                            <th>지역</th>
+                            <th>분회명</th>
+                            <th>직책</th>
+                            <th>성명</th>
+                            <th>주소</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>양식어업</td>
+                            <td>경인</td>
+                            <td>경인북부</td>
+                            <td>분회장</td>
+                            <td>이선용</td>
+                            <td>경기도 가평군 청평면 상천리 237-4</td>
+                        </tr>
+                        <tr>
+                            <td>양식어업</td>
+                            <td>경인</td>
+                            <td>경인북부</td>
+                            <td>분회장</td>
+                            <td>이선용</td>
+                            <td>경기도 가평군 청평면 상천리 237-4</td>
+                        </tr>
+                        <tr>
+                            <td>양식어업</td>
+                            <td>경인</td>
+                            <td>경인북부</td>
+                            <td>분회장</td>
+                            <td>이선용</td>
+                            <td>경기도 가평군 청평면 상천리 237-4</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <div class="page">&lt;&lt;</div>
+                        <div class="page">&lt;</div>
+                        <div class="page active">1</div>
+                        <div class="page">2</div>
+                        <div class="page">3</div>
+                        <div class="page">4</div>
+                        <div class="page">5</div>
+                        <div class="page">6</div>
+                        <div class="page">7</div>
+                        <div class="page">8</div>
+                        <div class="page">9</div>
+                        <div class="page">10</div>
+                        <div class="page">&gt;</div>
+                        <div class="page">&gt;&gt;</div>
+                    </div>
+                    <!-- Pagination //end -->
+                </div>
+                <div class="tab-content industry2">양식어업</div>
+                <div class="tab-content industry3">어선어업</div>
+                <div class="tab-content industry4">맨손(나잠)어업</div>
+                <div class="tab-content industry5">연승/연안어업</div>
+                <div class="tab-content industry6">근해어업</div>
+                <div class="tab-content industry7">자망어업</div>
+                <div class="tab-content industry8">마을어업</div>
+                <div class="tab-content industry9">채낚기및통발어업</div>
+                <div class="tab-content industry10">기타</div>
+            </div>
+            <!-- 종사어업별 회원현황 //end -->
         </div>
         <!-- container //end -->
     </div>

@@ -12,12 +12,28 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
-    $('.tab-fishing li').on('click', function() {
+    // 회원현황 조건별 검색
+    $('.select-search input[name=classify]').change(function () {
+        console.log($(this).val());
+        $('.classify-content').hide();
+        $('.'+$(this).val()).show();
+    });
+    // 회원현황 지역별 탭
+    $('.tab-regional li').on('click', function() {
         var index = $(this).index() + 1;
         $(this).siblings('li').removeClass('seleted');
         $(this).addClass('seleted');
         $('.tab-content').hide();
-        $('.fishing' + index).show();
+        $('.regional' + index).show();
+        return false;
+    });
+    // 회원현황 종사어업별 탭
+    $('.tab-industry li').on('click', function() {
+        var index = $(this).index() + 1;
+        $(this).siblings('li').removeClass('seleted');
+        $(this).addClass('seleted');
+        $('.tab-content').hide();
+        $('.industry' + index).show();
         return false;
     });
 

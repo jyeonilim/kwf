@@ -299,6 +299,7 @@ button {
         margin: auto;
     }
 }
+// 서브 2뎁스 탭메뉴
 .tab-wrap {
     background: url("../images/bg-tab.jpg") no-repeat 50% 0;
     .tab {
@@ -328,11 +329,13 @@ button {
         }
     }
 }
+// 탭메뉴
 .tabs {
     @include clearfix;
     margin: 0 -2px 50px;
     li {
         float: left;
+        width: 10%;
         padding: 0 2px;
         a {
             display: block;
@@ -349,14 +352,9 @@ button {
             letter-spacing: -2.7px\9;
         }
     }
-    &.tab-fishing {
-        li {
-            width: 10%;
-        }
-    }
     ~ .tab-content {
         display: none;
-        &.fishing1 {
+        &.regional1, &.industry1 {
             display: block;
         }
     }
@@ -692,6 +690,15 @@ button {
     .slick-next {
         right: 0;
         background-position: -80px 0;
+    }
+}
+
+/*******************************
+    회원현황
+*******************************/
+.classify-content {
+    &.industry {
+        display: none;
     }
 }
 

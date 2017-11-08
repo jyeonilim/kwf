@@ -674,6 +674,7 @@ button {
 
 .tabs li {
   float: left;
+  width: 10%;
   padding: 0 2px;
 }
 
@@ -692,15 +693,11 @@ button {
   letter-spacing: -2.7px\9;
 }
 
-.tabs.tab-fishing li {
-  width: 10%;
-}
-
 .tabs ~ .tab-content {
   display: none;
 }
 
-.tabs ~ .tab-content.fishing1 {
+.tabs ~ .tab-content.regional1, .tabs ~ .tab-content.industry1 {
   display: block;
 }
 
@@ -1113,6 +1110,13 @@ button {
 .main-department .slick-next {
   right: 0;
   background-position: -80px 0;
+}
+
+/*******************************
+    회원현황
+*******************************/
+.classify-content.industry {
+  display: none;
 }
 
 /*******************************
