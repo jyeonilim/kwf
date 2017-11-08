@@ -110,7 +110,9 @@ button {
                 text-align: center;
                 a {
                     color: #333;
-                    &:hover {
+                }
+                &.active, &:hover {
+                    a {
                         color: #fff;
                     }
                 }
@@ -690,6 +692,26 @@ button {
     .slick-next {
         right: 0;
         background-position: -80px 0;
+    }
+}
+
+/*******************************
+    연합회소개
+*******************************/
+// 조직현황
+.organization {
+    padding: 100px 0 245px;
+    border: 2px solid #eee;
+    background: url("../images/organization-bg-gradient.gif") repeat-x 0 0;
+    @include border-radius(100px);
+    @include box-shadow(1px 5px 15px 0px #cdcdcd);
+    &:before {
+        display: block;
+        width: 1055px;
+        height: 603px;
+        margin: 0 auto;
+        background: url("../images/organization.jpg") no-repeat 0 0;
+        content: '';
     }
 }
 
