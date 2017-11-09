@@ -1497,6 +1497,11 @@ td.subject a {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #333;
+  text-align: center;
+}
+
+.image-board li .gallery-info .title {
+  text-align: left;
 }
 
 .image-board li .date {

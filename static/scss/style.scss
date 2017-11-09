@@ -971,6 +971,12 @@ td.subject {
             text-overflow: ellipsis;
             white-space: nowrap;
             color: #333;
+            text-align: center;
+        }
+        .gallery-info {
+            .title {
+                text-align: left;
+            }
         }
         .date {
             color: #aaa;
