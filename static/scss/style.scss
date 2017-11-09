@@ -907,6 +907,78 @@ button {
 }
 
 /*******************************
+    커뮤니티
+*******************************/
+// 게시판
+.board-search {
+    float: right;
+    margin: 60px 0 20px;
+    .selectbox {
+        float: left;
+        .selectbox-value {
+            font-size: 16px;
+            line-height: (33-2)/16;
+        }
+    }
+    .search-input {
+        float: left;
+        margin-left: 10px;
+        .form-control {
+            width: 208px;
+        }
+    }
+}
+td.subject {
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: left;
+    a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.attachment {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../images/sprite-icon.png") no-repeat -320px 0;
+    font-size: 0;
+    color: transparent;
+    vertical-align: top;
+}
+// 이미지 게시판
+.image-board {
+    @include clearfix;
+    clear: both;
+    margin: 0 -35px -50px -35px;
+    li {
+        float: left;
+        width: 25%;
+        padding: 0 37px 50px 37px;
+        font-size: 20px;
+        &:nth-child(4n+1) {
+            clear: left;
+        }
+        img {
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+        .title {
+            overflow: hidden;
+            margin: 10px 0 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+        }
+        .date {
+            color: #aaa;
+        }
+    }
+}
+
+/*******************************
     Helper Class
 *******************************/
 .clearfix {

@@ -134,7 +134,9 @@ table {
 *******************************/
 .form-control {
   border: 1px solid #aaa;
+  height: 33px;
   line-height: 31px;
+  vertical-align: middle;
 }
 
 .radiobox {
@@ -144,6 +146,49 @@ table {
 .radiobox input[type=radio], .radiobox input[type=checkbox] {
   margin-right: 12px;
   vertical-align: 2px;
+}
+
+/*Selectbox*/
+.selectbox {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  text-align: left;
+}
+
+.selectbox select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.selectbox .selectbox-value {
+  display: block;
+  padding: 0 30px 0 10px;
+  background-color: #fff;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.selectbox .selectbox-value:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4px;
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  margin: auto;
+  background: url("../images/sprite-icon.png") no-repeat -360px 0;
+  line-height: 0;
+  color: transparent;
+  vertical-align: middle;
+  content: '';
 }
 
 /*******************************
@@ -180,6 +225,10 @@ table {
 .table.table-important td {
   font-weight: bold;
   font-size: 20px;
+}
+
+.table.table-fixed {
+  table-layout: fixed;
 }
 
 .table-vertical td {
@@ -222,6 +271,7 @@ table {
 
 .pagination .page.active, .pagination .page:hover {
   border-color: #777;
+  color: #286cdb;
 }
 
 /*******************************
@@ -1360,6 +1410,97 @@ button {
 
 .apply-complete strong {
   font-size: 25px;
+}
+
+/*******************************
+    커뮤니티
+*******************************/
+.board-search {
+  float: right;
+  margin: 60px 0 20px;
+}
+
+.board-search .selectbox {
+  float: left;
+}
+
+.board-search .selectbox .selectbox-value {
+  font-size: 16px;
+  line-height: 1.94;
+}
+
+.board-search .search-input {
+  float: left;
+  margin-left: 10px;
+}
+
+.board-search .search-input .form-control {
+  width: 208px;
+}
+
+td.subject {
+  padding-left: 17px;
+  padding-right: 17px;
+  text-align: left;
+}
+
+td.subject a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachment {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../images/sprite-icon.png") no-repeat -320px 0;
+  font-size: 0;
+  color: transparent;
+  vertical-align: top;
+}
+
+.image-board {
+  clear: both;
+  margin: 0 -35px -50px -35px;
+}
+
+.image-board:before, .image-board:after {
+  content: " ";
+  display: table;
+}
+
+.image-board:after {
+  clear: both;
+}
+
+.image-board li {
+  float: left;
+  width: 25%;
+  padding: 0 37px 50px 37px;
+  font-size: 20px;
+}
+
+.image-board li:nth-child(4n+1) {
+  clear: left;
+}
+
+.image-board li img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.image-board li .title {
+  overflow: hidden;
+  margin: 10px 0 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+
+.image-board li .date {
+  color: #aaa;
 }
 
 /*******************************

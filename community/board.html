@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>분회별 게시판</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script type="text/javascript" src="../static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/slick.min.js"></script>
+    <script type="text/javascript" src="../static/js/common.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- Header -->
+    <div class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="#"><span class="sr-only">한국여성어업인연합회</span></a></h1>
+            <div class="quick-access">
+                <ul class="access-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+                <!-- [D] 로그인 시
+                <ul class="access-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                </ul>
+                -->
+                <div class="search-box">
+                    <input type="text" class="form-control">
+                    <a href="#" class="btn-search"><span class="sr-only">검색</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-top">
+            <div class="gnb-wrap">
+                <h2 class="sr-only">메인 메뉴</h2>
+                <ul class="gnb">
+                    <li><a href="#">연합회소개</a></li>
+                    <li><a href="#">회원현황</a></li>
+                    <li><a href="#">교육안내 및 신청</a></li>
+                    <li class="active"><a href="#">커뮤니티</a></li>
+                    <li><a href="#">관련사이트</a></li>
+                </ul>
+            </div>
+            <p class="sub-text">어촌의 복지 증진과 지역사회 발전에 기여하는 <strong>한국여성어업인연합회</strong></p>
+        </div>
+    </div>
+    <!-- Header //end -->
+    <!-- Content -->
+    <div class="content">
+        <!-- 서브 탭메뉴 -->
+        <div class="tab-wrap">
+            <h3 class="sr-only">서브 탭메뉴</h3>
+            <ul class="tab">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자료실</a></li>
+                <li class="active"><a href="#">분회별 게시판</a></li>
+                <li><a href="#">포토갤러리</a></li>
+                <li><a href="#">자주묻는 질문</a></li>
+            </ul>
+        </div>
+        <!-- 서브 탭메뉴 //end -->
+        <!-- container -->
+        <div class="container">
+            <div class="title-box">
+                <h2 class="page-title">분회별 게시판</h2>
+                <ul class="location">
+                    <li class="home"><a href="#">home</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li class="current"><a href="#">분회별 게시판</a></li>
+                </ul>
+            </div>
+            <div class="board-search">
+                <div class="selectbox">
+                    <strong class="selectbox-value">== 검색옵션 ==</strong>
+                    <select onchange="selectboxEvent(this);">
+                        <option>== 검색옵션 ==</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" class="form-control">
+                    <a href="#" class="btn btn-primary">검색</a>
+                </div>
+            </div>
+            <table class="table table-fixed">
+                <colgroup>
+                    <col style="width: 50px;">
+                    <col>
+                    <col style="width: 50px;">
+                    <col style="width: 95px;">
+                    <col style="width: 140px;">
+                    <col style="width: 70px;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>파일</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="subject"><a href="#">한국여성어업인연합회 분회별 게시판 test 한국여성어업인연합회 분회별 게시판 test 한국여성어업인연합회 분회별 게시판 test 한국여성어업인연합회 분회별 게시판 test</a></td>
+                    <td><span class="attachment">첨부파일</span></td>
+                    <td>선우안규</td>
+                    <td>2017-11-30</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="subject"><a href="#">분회별 게시판 test</a></td>
+                    <td></td>
+                    <td>선우안규</td>
+                    <td>2017-11-30</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="subject"><a href="#"></a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page">&lt;&lt;</div>
+                <div class="page">&lt;</div>
+                <div class="page active">1</div>
+                <div class="page">2</div>
+                <div class="page">3</div>
+                <div class="page">4</div>
+                <div class="page">5</div>
+                <div class="page">6</div>
+                <div class="page">7</div>
+                <div class="page">8</div>
+                <div class="page">9</div>
+                <div class="page">10</div>
+                <div class="page">&gt;</div>
+                <div class="page">&gt;&gt;</div>
+            </div>
+            <!-- Pagination //end -->
+        </div>
+        <!-- container //end -->
+    </div>
+    <!-- Content //end -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-inner">
+            <h3 class="foot-logo"><span class="sr-only">한국여성어업인연합회</span></h3>
+            <div class="foot-info">
+                <ul class="foot-link">
+                    <li><a href="#">이용약관</a></li>
+                    <li class="privacy"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사이트</a></li>
+                </ul>
+                <dl>
+                    <dt class="sr-only">주소</dt>
+                    <dd><address>(05510) 서울특별시 송파구 오금로 62 (신천동 11-6)</address></dd>
+                    <dt>TEL</dt>
+                    <dd>02-2240-2265</dd>
+                    <dt>FAX</dt>
+                    <dd>02-2240-3210</dd>
+                </dl>
+                <p class="copyright">Copyright(c) 사단법인 한국여성어업인연합회  All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer //end -->
+</div>
+</body>
+</html>

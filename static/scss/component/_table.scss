@@ -29,6 +29,9 @@
             font-size: 20px;
         }
     }
+    &.table-fixed {
+        table-layout: fixed;
+    }
 }
 .table-vertical {
     td {
@@ -68,5 +71,6 @@
     }
     .page.active, .page:hover {
         border-color: #777;
+        color: #286cdb;
     }
 }
