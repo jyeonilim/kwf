@@ -7,6 +7,14 @@
     line-height: 31px;
     vertical-align: middle;
 }
+input[type=radio],
+input[type=checkbox] {
+    vertical-align: middle;
+}
+select {
+    border: 2px solid #aaa;
+    background-color: #fff;
+}
 .radiobox {
     margin-right: 50px;
     input[type=radio], input[type=checkbox] {
@@ -14,7 +22,6 @@
         vertical-align: 2px;
     }
 }
-
 /*Selectbox*/
 .selectbox {
     position: relative;

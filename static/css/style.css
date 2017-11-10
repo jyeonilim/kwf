@@ -103,6 +103,18 @@ table {
   color: #fff;
 }
 
+.btn-arrow:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 16px solid #fff;
+  vertical-align: text-top;
+  content: '';
+}
+
 .btn-align-center {
   text-align: center;
 }
@@ -137,6 +149,16 @@ table {
   height: 33px;
   line-height: 31px;
   vertical-align: middle;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  vertical-align: middle;
+}
+
+select {
+  border: 2px solid #aaa;
+  background-color: #fff;
 }
 
 .radiobox {
@@ -248,6 +270,34 @@ table {
 .table-search td {
   padding-left: 20px;
   text-align: left;
+}
+
+.table-input {
+  border-top-width: 4px;
+  font-family: "MalgunGothic", "맑은 고딕", sans-serif;
+}
+
+.table-input th {
+  background-color: #fff;
+  font-size: 23px;
+  color: #333;
+}
+
+.table-input th, .table-input td {
+  padding-left: 25px;
+  border: 2px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  font-size: 20px;
+  color: #555;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-input .form-control {
+  height: 50px;
+  border: 2px solid #ddd;
+  line-height: 46px;
 }
 
 /* Pagination */
@@ -381,6 +431,7 @@ button {
 
 .header .quick-access .search-box {
   float: left;
+  margin-top: -8px;
   padding: 4px 24px 4px 4px;
   border: 1px solid #ddd;
 }
@@ -1506,6 +1557,233 @@ td.subject a {
 
 .image-board li .date {
   color: #aaa;
+}
+
+/*******************************
+    회원가입
+*******************************/
+.signup-process {
+  display: table;
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.signup-process li {
+  display: table-cell;
+  padding: 33px 0;
+  border: 2px solid #aaa;
+  border-width: 2px 0 4px;
+  font: bold 27px/50px "MalgunGothic", "맑은 고딕", sans-serif;
+  color: #555;
+  text-align: center;
+}
+
+.signup-process li:before {
+  float: left;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat -400px 0;
+  line-height: 0;
+  color: transparent;
+  vertical-align: middle;
+  content: '';
+}
+
+.signup-process li:first-child:before {
+  width: 0;
+  background: none;
+}
+
+.signup-process li.current {
+  position: relative;
+  color: #286cdb;
+}
+
+.signup-process li.current:after {
+  position: absolute;
+  bottom: -4px;
+  left: 50px;
+  width: calc(100% - 50px);
+  height: 4px;
+  background-color: #286cdb;
+  content: '';
+}
+
+.signup-process li.current:first-child:after {
+  left: 0;
+  width: 100%;
+}
+
+.btn-signup .btn {
+  width: 225px;
+  font-size: 25px;
+}
+
+.btn-signup .btn:after {
+  vertical-align: -3px;
+}
+
+.agreement-box {
+  overflow-y: auto;
+  width: 1200px;
+  height: 297px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  color: #606060;
+  line-height: 28px;
+}
+
+.check-agree {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #444;
+}
+
+.identification {
+  padding: 70px 0;
+  border-top: 4px solid #333;
+  border-bottom: 2px solid #aaa;
+}
+
+.text-identification {
+  margin-top: 30px;
+  padding-left: 12px;
+  font: bold 21px/27px "MalgunGothic", "맑은 고딕", sans-serif;
+  color: #777;
+  text-indent: -12px;
+}
+
+.mobile-confirm {
+  width: 546px;
+  margin: 0 auto;
+  padding: 0 25px;
+  border: 2px solid #ddd;
+  border-top-color: #333;
+  text-align: center;
+}
+
+.mobile-confirm dt {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.mobile-confirm dt:before {
+  width: 30px;
+  height: 51px;
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat -320px -40px;
+  line-height: 0;
+  color: transparent;
+  margin-right: 14px;
+  vertical-align: middle;
+  content: '';
+}
+
+.mobile-confirm dd {
+  padding: 35px 0 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mobile-confirm dd .btn {
+  width: 280px;
+  margin-top: 35px;
+}
+
+.text-essential {
+  margin: 5px 0;
+  font: bold 22px "MalgunGothic", "맑은 고딕", sans-serif;
+  color: #333;
+  text-align: right;
+}
+
+.check-id {
+  display: inline-block;
+  height: 50px;
+  padding: 0 10px;
+  border: 2px solid #aaa;
+  background: url("../images/bg-btn-gradient.gif") repeat-x 0 0;
+  line-height: 46px;
+  vertical-align: middle;
+}
+
+.address p {
+  margin-top: 7px;
+}
+
+.address p:first-child {
+  margin-top: 0;
+}
+
+.address .btn-zipcode {
+  display: inline-block;
+  line-height: 30px;
+  border: 2px solid #aaa;
+  background-color: #ddd;
+  color: #000;
+  vertical-align: middle;
+}
+
+.address .btn-zipcode:hover, .address .btn-zipcode:active {
+  border-color: #2f6495;
+  background-color: #4ca1f0;
+}
+
+.address .form-control {
+  width: 250px;
+  height: 34px;
+  line-height: 30px;
+  border: 2px solid #aaa;
+}
+
+.caution {
+  margin-left: 20px;
+}
+
+.check-industry label {
+  float: left;
+  margin-right: 35px;
+  padding: 10px 0;
+}
+
+.check-industry label:nth-child(6n+1) {
+  clear: left;
+}
+
+.btn-signup-input {
+  margin-top: 62px;
+}
+
+.btn-signup-input .btn {
+  width: 200px;
+}
+
+.signup-complete {
+  width: 967px;
+  margin: 0 auto 50px;
+  padding: 75px 0 85px;
+  border: 2px solid #ddd;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.signup-complete strong {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 26px;
+  color: #333;
+}
+
+.btn-signup-complete .btn {
+  width: 313px;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 /*******************************

@@ -38,6 +38,19 @@
         color: #fff;
     }
 }
+.btn-arrow {
+    &:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 20px;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 16px solid #fff;
+        vertical-align: text-top;
+        content: '';
+    }
+}
 .btn-align-center {
     text-align: center;
 }
