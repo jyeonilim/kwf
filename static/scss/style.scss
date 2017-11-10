@@ -986,6 +986,104 @@ td.subject {
 }
 
 /*******************************
+    로그인
+*******************************/
+.signin {
+    padding-top: 65px;
+    border-top: 4px solid #333;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    .text {
+        margin-bottom: 65px;
+        font-size: 26px;
+        color: #333;
+    }
+    .clearfix {
+        display: inline-block;
+    }
+    .signin-input {
+        float: left;
+        margin-right: 13px;
+        li {
+            margin-top: 15px;
+            font-size: 22px;
+            &:first-child {
+                margin-top: 0;
+            }
+            label {
+                display: inline-block;
+                width: 110px;
+                line-height: 50px;
+                text-align: left;
+                vertical-align: middle;
+            }
+            .form-control {
+                width: 376px;
+                height: 50px;
+                line-height: 46px;
+                border: 2px solid #ddd;
+            }
+        }
+    }
+    .btn-signin {
+        float: left;
+        padding: 0 66px;
+        background-color: #286cdb;
+        font: bold 24px/115px $font-family-second;
+        color: #fff;
+    }
+}
+.member-access-box {
+    margin-top: 90px;
+    padding: 35px 0;
+    border-top: 2px solid #ddd;
+    background-color: #fafafa;
+}
+.member-access {
+    width: 720px;
+    margin: 0 auto;
+    text-align: left;
+    li {
+        @include clearfix;
+        padding: 7px 0;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .btn {
+        float: right;
+        width: 278px;
+        font: bold 21px/48px $font-family-second;
+        &.btn-arrow {
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 16px;
+                margin: auto;
+            }
+        }
+    }
+}
+// 아이디찾기
+.text-qna {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    .telephone {
+        display: block;
+        padding: 12px 0 0 19px;
+        &:before {
+            @include sp-size(41px,41px);
+            @include sp-icon(-320px,-120px);
+            margin-right: 12px;
+            vertical-align: middle;
+            content: '';
+        }
+    }
+}
+
+/*******************************
     회원가입
 *******************************/
 .signup-process {
@@ -1114,6 +1212,7 @@ td.subject {
     background: url("../images/bg-btn-gradient.gif") repeat-x 0 0;
     line-height: 46px;
     vertical-align: middle;
+    line-height: 42px\9;
 }
 .address {
     p {
@@ -1124,11 +1223,13 @@ td.subject {
     }
     .btn-zipcode {
         display: inline-block;
+        height: 34px;
         line-height: 30px;
         border: 2px solid #aaa;
         background-color: #ddd;
         color: #000;
         vertical-align: middle;
+        line-height: 24px\9;
         &:hover, &:active {
             border-color: #2f6495;
             background-color: #4ca1f0;

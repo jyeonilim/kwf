@@ -4,6 +4,7 @@
 .form-control {
     border: 1px solid #aaa;
     height: 33px;
+    font-family: $font-family-base;
     line-height: 31px;
     vertical-align: middle;
 }
@@ -14,6 +15,7 @@ input[type=checkbox] {
 select {
     border: 2px solid #aaa;
     background-color: #fff;
+    font-family: $font-family-base;
 }
 .radiobox {
     margin-right: 50px;
