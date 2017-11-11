@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>본인확인</title>
+    <title>교육신청 현황</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <script type="text/javascript" src="../static/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="../static/js/slick.min.js"></script>
@@ -57,34 +57,58 @@
         <!-- container -->
         <div class="container">
             <div class="title-box">
-                <h2 class="page-title">회원가입</h2>
+                <h2 class="page-title"><span class="text-blue">손안규</span>님의 교육신청 현황</h2>
                 <ul class="location">
                     <li class="home"><a href="#">home</a></li>
-                    <li class="current"><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li class="current"><a href="#">교육신청 현황</a></li>
                 </ul>
             </div>
-            <p class="page-text">한국 여성어업인의 회원가입을 도와드리고 있습니다.</p>
-            <ol class="signup-process">
-                <li>1.회원이용약관</li>
-                <li class="current">2.본인확인</li>
-                <li>3.개인정보입력</li>
-                <li>3.가입완료</li>
-            </ol>
-            <!-- 본인인증 -->
-            <section class="section">
-                <h3 class="second-title">본인인증</h3>
-                <div class="identification">
-                    <dl class="mobile-confirm">
-                        <dt>모바일인증</dt>
-                        <dd>
-                            <p>본인 명의의 휴대폰으로 인증번호를<br>발송하여 본인 인증합니다.</p>
-                            <a href="#" class="btn btn-lg btn-primary"><b>모바일 인증하기</b></a>
-                        </dd>
-                    </dl>
-                </div>
-                <p class="text-identification">· 입력하신 이름/생년월일 및 핸드폰 번호는 한국모바일인증(KMC)을 통한 본인 인증에 사용됩니다.<br>[인증번호 받기]를 눌러 수신한 인증번호로 진행해 주세요.</p>
-            </section>
-            <!-- 본인인증 //end -->
+            <p class="page-text">나의 교육신청 현황입니다.</p>
+            <!-- 교육신청 현황 게시판 -->
+            <table class="table state-board">
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>교육명</th>
+                    <th>기관명</th>
+                    <th>교육일정</th>
+                    <th>신청일</th>
+                    <th>교육장소</th>
+                    <th>이수여부</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>수산관련 전문교육</td>
+                    <td>수협연수원</td>
+                    <td>2017-10-25~2017-10-31</td>
+                    <td>2017-10-19</td>
+                    <td>천안</td>
+                    <td><a href="#" class="btn-delete"><span class="sr-only">신청삭제</span></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page">&lt;&lt;</div>
+                <div class="page">&lt;</div>
+                <div class="page active">1</div>
+                <div class="page">2</div>
+                <div class="page">3</div>
+                <div class="page">4</div>
+                <div class="page">5</div>
+                <div class="page">6</div>
+                <div class="page">7</div>
+                <div class="page">8</div>
+                <div class="page">9</div>
+                <div class="page">10</div>
+                <div class="page">&gt;</div>
+                <div class="page">&gt;&gt;</div>
+            </div>
+            <!-- Pagination //end -->
+            <!-- 교육신청 현황 게시판 //end -->
         </div>
         <!-- container //end -->
     </div>

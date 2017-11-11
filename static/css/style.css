@@ -478,7 +478,7 @@ button {
 }
 
 .sub-top .gnb-wrap .gnb li a {
-  color: #333;
+  color: #333333;
 }
 
 .sub-top .gnb-wrap .gnb li.active a, .sub-top .gnb-wrap .gnb li:hover a {
@@ -621,7 +621,7 @@ button {
 
 .border-box {
   border: 1px solid #ddd;
-  border-top: 2px solid #333;
+  border-top: 2px solid #333333;
 }
 
 .title-box {
@@ -705,7 +705,7 @@ button {
 }
 
 .location li.current a {
-  color: #333;
+  color: #333333;
 }
 
 .search-box {
@@ -750,7 +750,7 @@ button {
   display: block;
   height: 50px;
   font: bold 18px/54px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
-  color: #333;
+  color: #333333;
   text-align: center;
   line-height: 48px\9;
 }
@@ -789,7 +789,7 @@ button {
   border-bottom: 3px solid #d9d9d9;
   background-color: #f3f3f3;
   font: bold 18px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
-  color: #333;
+  color: #333333;
   letter-spacing: -1.3px;
   text-align: center;
   padding: 6px 0 9px\9;
@@ -1044,7 +1044,7 @@ button {
 }
 
 .main-gnb .gnb-item .item-depth li a:hover {
-  color: #333;
+  color: #333333;
 }
 
 .main-gnb .gnb-item .item1 .item-depth {
@@ -1363,7 +1363,7 @@ button {
   padding-left: 42px;
   font-size: 20px;
   line-height: 45px;
-  color: #333;
+  color: #333333;
 }
 
 /*******************************
@@ -1439,7 +1439,7 @@ button {
   font-weight: bold;
   font-size: 22px;
   line-height: 40px;
-  color: #333;
+  color: #333333;
 }
 
 .apply-complete:before, .apply-complete:after {
@@ -1549,7 +1549,7 @@ td.subject a {
   margin: 10px 0 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #333;
+  color: #333333;
   text-align: center;
 }
 
@@ -1566,7 +1566,7 @@ td.subject a {
 *******************************/
 .signin {
   padding-top: 65px;
-  border-top: 4px solid #333;
+  border-top: 4px solid #333333;
   border-bottom: 2px solid #ddd;
   text-align: center;
 }
@@ -1574,7 +1574,7 @@ td.subject a {
 .signin .text {
   margin-bottom: 65px;
   font-size: 26px;
-  color: #333;
+  color: #333333;
 }
 
 .signin .clearfix {
@@ -1771,7 +1771,7 @@ td.subject a {
 
 .identification {
   padding: 70px 0;
-  border-top: 4px solid #333;
+  border-top: 4px solid #333333;
   border-bottom: 2px solid #aaa;
 }
 
@@ -1788,7 +1788,7 @@ td.subject a {
   margin: 0 auto;
   padding: 0 25px;
   border: 2px solid #ddd;
-  border-top-color: #333;
+  border-top-color: #333333;
   text-align: center;
 }
 
@@ -1826,7 +1826,7 @@ td.subject a {
 .text-essential {
   margin: 5px 0;
   font: bold 22px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
-  color: #333;
+  color: #333333;
   text-align: right;
 }
 
@@ -1908,13 +1908,62 @@ td.subject a {
   display: block;
   margin-bottom: 40px;
   font-size: 26px;
-  color: #333;
+  color: #333333;
 }
 
 .btn-signup-complete .btn {
   width: 313px;
   font-weight: bold;
   font-size: 21px;
+}
+
+/*******************************
+    마이페이지
+*******************************/
+.state-board th, .state-board td {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.state-board th {
+  padding: 24px 0;
+  background-color: #fff;
+}
+
+.state-board td {
+  padding: 40px 0;
+  font-weight: bold;
+  color: #015df4;
+}
+
+.state-board td:first-child {
+  color: #333333;
+}
+
+.btn-delete {
+  display: inline-block;
+  width: 141px;
+  height: 45px;
+  background: url("../images/btn-delete.gif") no-repeat 0 0;
+}
+
+.leave-id {
+  width: 973px;
+  height: 259px;
+  margin: 100px auto 45px;
+  padding: 85px 0 75px;
+  border: 2px solid #aaa;
+  font-size: 23px;
+  text-align: center;
+}
+
+.leave-id p {
+  margin-top: 43px;
+}
+
+.btn-leave .btn {
+  width: 204px;
+  font-size: 23px;
 }
 
 /*******************************

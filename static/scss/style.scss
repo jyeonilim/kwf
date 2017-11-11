@@ -110,7 +110,7 @@ button {
                 font-size: 22px;
                 text-align: center;
                 a {
-                    color: #333;
+                    color: $gray-dark;
                 }
                 &.active, &:hover {
                     a {
@@ -225,7 +225,7 @@ button {
 }
 .border-box {
     border: 1px solid #ddd;
-    border-top: 2px solid #333;
+    border-top: 2px solid $gray-dark;
 }
 .title-box {
     @include clearfix;
@@ -279,7 +279,7 @@ button {
         }
         &.current {
             a {
-                color: #333;
+                color: $gray-dark;
             }
         }
     }
@@ -319,7 +319,7 @@ button {
                 height: 50px;
                 //padding: 17px 0 12px;
                 font: bold 18px/54px $font-family-second;
-                color: #333;
+                color: $gray-dark;
                 text-align: center;
                 line-height: 48px\9;
             }
@@ -347,7 +347,7 @@ button {
             border-bottom: 3px solid #d9d9d9;
             background-color: #f3f3f3;
             font: bold 18px $font-family-second;
-            color: #333;
+            color: $gray-dark;
             letter-spacing: -1.3px;
             text-align: center;
             padding: 6px 0 9px\9;
@@ -546,7 +546,7 @@ button {
                     font-size: 15px;
                     color: #fff;
                     &:hover {
-                        color: #333;
+                        color: $gray-dark;
                     }
                 }
             }
@@ -818,7 +818,7 @@ button {
         padding-left: 42px;
         font-size: 20px;
         line-height: 45px;
-        color: #333;
+        color: $gray-dark;
     }
 }
 
@@ -893,7 +893,7 @@ button {
     font-weight: bold;
     font-size: 22px;
     line-height: 40px;
-    color: #333;
+    color: $gray-dark;
     &:before {
         float: left;
         display: inline-block;
@@ -971,7 +971,7 @@ td.subject {
             margin: 10px 0 15px;
             text-overflow: ellipsis;
             white-space: nowrap;
-            color: #333;
+            color: $gray-dark;
             text-align: center;
         }
         .gallery-info {
@@ -990,13 +990,13 @@ td.subject {
 *******************************/
 .signin {
     padding-top: 65px;
-    border-top: 4px solid #333;
+    border-top: 4px solid $gray-dark;
     border-bottom: 2px solid #ddd;
     text-align: center;
     .text {
         margin-bottom: 65px;
         font-size: 26px;
-        color: #333;
+        color: $gray-dark;
     }
     .clearfix {
         display: inline-block;
@@ -1156,7 +1156,7 @@ td.subject {
 // 본인확인
 .identification {
     padding: 70px 0;
-    border-top: 4px solid #333;
+    border-top: 4px solid $gray-dark;
     border-bottom: 2px solid #aaa;
 }
 .text-identification {
@@ -1171,7 +1171,7 @@ td.subject {
     margin: 0 auto;
     padding: 0 25px;
     border: 2px solid #ddd;
-    border-top-color: #333;
+    border-top-color: $gray-dark;
     text-align: center;
     dt {
         padding: 20px 0;
@@ -1201,7 +1201,7 @@ td.subject {
 .text-essential {
     margin: 5px 0;
     font: bold 22px $font-family-second;
-    color: #333;
+    color: $gray-dark;
     text-align: right;
 }
 .check-id {
@@ -1274,7 +1274,7 @@ td.subject {
         display: block;
         margin-bottom: 40px;
         font-size: 26px;
-        color: #333;
+        color: $gray-dark;
     }
 }
 .btn-signup-complete {
@@ -1282,6 +1282,52 @@ td.subject {
         width: 313px;
         font-weight: bold;
         font-size: 21px;
+    }
+}
+
+/*******************************
+    마이페이지
+*******************************/
+.state-board {
+    th, td {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        padding: 24px 0;
+        background-color: #fff;
+    }
+    td {
+        padding: 40px 0;
+        font-weight: bold;
+        color: $brand-primary;
+        &:first-child {
+            color: $gray-dark;
+        }
+    }
+}
+.btn-delete {
+    display: inline-block;
+    width: 141px;
+    height: 45px;
+    background: url("../images/btn-delete.gif") no-repeat 0 0;
+}
+.leave-id {
+    width: 973px;
+    height: 259px;
+    margin: 100px auto 45px;
+    padding: 85px 0 75px;
+    border: 2px solid #aaa;
+    font-size: 23px;
+    text-align: center;
+    p {
+        margin-top: 43px;
+    }
+}
+.btn-leave {
+    .btn {
+        width: 204px;
+        font-size: 23px;
     }
 }
 

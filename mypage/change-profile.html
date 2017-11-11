@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>개인정보입력</title>
+    <title>회원정보수정</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <script type="text/javascript" src="../static/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="../static/js/slick.min.js"></script>
@@ -57,24 +57,18 @@
         <!-- container -->
         <div class="container">
             <div class="title-box">
-                <h2 class="page-title">회원가입</h2>
+                <h2 class="page-title">회원정보수정</h2>
                 <ul class="location">
                     <li class="home"><a href="#">home</a></li>
-                    <li class="current"><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li class="current"><a href="#">회원정보수정</a></li>
                 </ul>
             </div>
-            <p class="page-text">한국 여성어업인의 회원가입을 도와드리고 있습니다.</p>
-            <ol class="signup-process">
-                <li>1.회원이용약관</li>
-                <li>2.본인확인</li>
-                <li class="current">3.개인정보입력</li>
-                <li>3.가입완료</li>
-            </ol>
-            <!-- 개인정보입력 -->
+            <p class="page-text">한국여성어업인들의 회원정보를 수정하는 페이지입니다.</p>
+            <!-- 회원정보수정 -->
             <section class="section">
-                <h3 class="second-title">개인정보입력</h3>
+                <h3 class="second-title">회원정보수정</h3>
                 <div class="signup-input">
-                    <p class="text-essential"><b class="text-red">*</b> 는 필수항목입니다.</p>
                     <table class="table table-input">
                         <colgroup>
                             <col style="width: 225px;">
@@ -82,11 +76,11 @@
                         </colgroup>
                         <tbody>
                         <tr>
-                            <th scope="row">성명 <b class="text-red">*</b></th>
+                            <th scope="row">성명</th>
                             <td><input type="text" class="form-control" style="width: 285px;"></td>
                         </tr>
                         <tr>
-                            <th scope="row">아이디 <b class="text-red">*</b></th>
+                            <th scope="row">아이디</th>
                             <td>
                                 <input type="text" class="form-control" style="width: 285px;">
                                 <a href="#" class="check-id">중복확인</a>
@@ -94,18 +88,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">비밀번호 <b class="text-red">*</b></th>
+                            <th scope="row">비밀번호</th>
                             <td>
                                 <input type="text" class="form-control" style="width: 285px;">
                                 <span class="caution">※ 비밀번호는 8~16자 영문과 숫자 조합이어야 합니다.</span>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">비밀번호 확인 <b class="text-red">*</b></th>
+                            <th scope="row">비밀번호 확인</th>
                             <td><input type="password" class="form-control" style="width: 285px;"></td>
                         </tr>
                         <tr>
-                            <th scope="row">일반전화 <b class="text-red">*</b></th>
+                            <th scope="row">일반전화</th>
                             <td>
                                 <select>
                                     <option>선택</option>
@@ -116,7 +110,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">휴대전화 <b class="text-red">*</b></th>
+                            <th scope="row">휴대전화</th>
                             <td>
                                 <select>
                                     <option>선택</option>
@@ -126,11 +120,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">E-mail <b class="text-red">*</b></th>
+                            <th scope="row">E-mail</th>
                             <td><input type="text" class="form-control" style="width: 499px;"></td>
                         </tr>
                         <tr>
-                            <th scope="row">주소 <b class="text-red">*</b></th>
+                            <th scope="row">주소</th>
                             <td class="address">
                                 <p>
                                     <input type="text" class="form-control" value="우편번호">
@@ -143,7 +137,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">지역 <b class="text-red">*</b></th>
+                            <th scope="row">지역</th>
                             <td>
                                 <label><input type="checkbox"> 경인</label>
                                 <label><input type="checkbox"> 강원</label>
@@ -157,7 +151,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">분회명 <b class="text-red">*</b></th>
+                            <th scope="row">분회명</th>
                             <td>
                                 <select>
                                     <option>분회명선택</option>
@@ -165,7 +159,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">직책 <b class="text-red">*</b></th>
+                            <th scope="row">직책</th>
                             <td>
                                 <select>
                                     <option>직책선택</option>
@@ -173,7 +167,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">종사어업 <b class="text-red">*</b></th>
+                            <th scope="row">종사어업</th>
                             <td class="check-industry">
                                 <label><input type="checkbox"> 양식어업</label>
                                 <label><input type="checkbox"> 어선어업</label>
@@ -189,12 +183,12 @@
                         </tbody>
                     </table>
                     <div class="btn-align-center btn-signup-input">
-                        <a href="#" class="btn btn-lg btn-primary">확인</a>
+                        <a href="#" class="btn btn-lg btn-primary">수정</a>
                         <a href="#" class="btn btn-lg btn-gray">취소</a>
                     </div>
                 </div>
             </section>
-            <!-- 개인정보입력 //end -->
+            <!-- 회원정보수정 //end -->
         </div>
         <!-- container //end -->
     </div>
