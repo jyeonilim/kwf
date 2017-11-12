@@ -891,14 +891,18 @@ button {
 }
 
 .main-visual {
+  overflow: hidden;
   position: relative;
+  max-width: 1903px;
   min-width: 1200px;
-  margin-top: 28px;
+  margin: 28px auto 0;
   border-top: 1px solid #ccc;
+  background: url("../images/bg-main-visual.jpg") no-repeat 50% 0;
 }
 
 .main-visual .slick-slide {
   height: 410px;
+  background-repeat: no-repeat;
   background-position: 50% 0;
 }
 
