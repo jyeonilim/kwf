@@ -3,7 +3,8 @@ $(document).ready(function() {
     // 메인 상단 롤링
     $('.main-visual').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        autoplay: true
     });
     // 메인 하단 유관부서 롤링
     $('.main-department').slick({
