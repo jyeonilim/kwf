@@ -1,0 +1,1013 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea, select, option {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, iframe {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************
+    Button
+*******************************/
+.btn {
+  display: inline-block;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-md {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.btn-lg {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.btn-primary {
+  border: 1px solid #286cdb;
+  background-color: #286cdb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+}
+
+.btn-second {
+  border: 1px solid #ff8b02;
+  background-color: #ff8b02;
+  color: #fff;
+}
+
+.btn-second:hover {
+  color: #fff;
+}
+
+.btn-gray {
+  border: 1px solid #666;
+  background-color: #666;
+  color: #fff;
+}
+
+.btn-gray:hover {
+  color: #fff;
+}
+
+.btn-arrow:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 16px solid #fff;
+  vertical-align: text-top;
+  content: '';
+}
+
+.btn-align-center {
+  text-align: center;
+}
+
+.btn-align-right {
+  text-align: right;
+}
+
+/*******************************
+    Image Button
+*******************************/
+.btn-search {
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat 0 0;
+  line-height: 0;
+  color: transparent;
+  width: 16px;
+  height: 17px;
+}
+
+.btn-calendar {
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat -160px 0;
+  line-height: 0;
+  color: transparent;
+  width: 30px;
+  height: 27px;
+  vertical-align: -6px;
+}
+
+/*******************************
+    Table
+*******************************/
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 2px solid #333333;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  vertical-align: middle;
+}
+
+.table th {
+  padding: 13px 0 10px;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+.table td {
+  padding: 15px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.table td.align-left {
+  text-align: left;
+}
+
+.table.table-important td {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.table.table-fixed {
+  table-layout: fixed;
+}
+
+.table-vertical td {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.table-search th, .table-search td {
+  border-color: #aaa;
+}
+
+.table-search th {
+  padding: 20px 0 16px;
+  background-color: #ebebeb;
+}
+
+.table-search td {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.table-input {
+  border-top-width: 4px;
+  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+}
+
+.table-input th {
+  background-color: #fff;
+  font-size: 23px;
+  color: #333;
+}
+
+.table-input th, .table-input td {
+  padding-left: 25px;
+  border: 2px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  font-size: 20px;
+  color: #555;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-input .form-control {
+  height: 50px;
+  border: 2px solid #ddd;
+  line-height: 46px;
+}
+
+/* Pagination */
+.pagination {
+  margin: 85px 0 -100px;
+  text-align: center;
+}
+
+.pagination .page {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 1px;
+  border: 1px solid #d4d4d4;
+  font: bold 18px/30px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  line-height: 28px\9;
+}
+
+.pagination .page.active, .pagination .page:hover {
+  border-color: #777;
+  color: #286cdb;
+}
+
+.pagination .page.first, .pagination .page.last, .pagination .page.prev, .pagination .page.next {
+  color: #286cdb;
+}
+
+/*******************************
+    Scaffolding
+*******************************/
+body {
+  background-color: white;
+  font: 400 14px "Nanum Gothic", sans-serif;
+}
+
+a,
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*******************************
+    Component
+*******************************/
+.btn-calendar {
+  vertical-align: middle;
+}
+
+.btn-board {
+  padding: 0 16px;
+  border: 1px solid #b6b4b4;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #eee;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.form-control {
+  border: 1px solid #aaa;
+  height: 32px;
+  padding: 0 4px;
+  font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.selectbox {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  text-align: left;
+}
+
+.selectbox select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.selectbox .selectbox-value {
+  display: block;
+  padding: 0 40px 0 4px;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.selectbox .selectbox-value:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 19px;
+  height: 32px;
+  margin: auto;
+  padding: 0 4px;
+  border-left: 1px solid #aaa;
+  background: url("../images/sprite-icon.png") no-repeat -356px 8px;
+  line-height: 0;
+  color: transparent;
+  vertical-align: middle;
+  content: '';
+}
+
+.table-important td .form-control {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.table2 {
+  border-top: 4px solid #333;
+  border-bottom: 2px solid #ccc;
+}
+
+.table2 th, .table2 td {
+  border: 0;
+}
+
+.table2 th {
+  padding: 18px 0 15px;
+  border-bottom: 2px solid #ccc;
+  background-color: #ebebeb;
+}
+
+.table2 td {
+  padding: 9px 0;
+}
+
+.table2 tr:first-child td {
+  padding-top: 23px;
+}
+
+.table2 tr:last-child td {
+  padding-bottom: 23px;
+}
+
+/*******************************
+    Layout
+*******************************/
+.wrap {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.wrap:before, .wrap:after {
+  content: " ";
+  display: table;
+}
+
+.wrap:after {
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto 84px;
+}
+
+/*******************************
+    Header
+*******************************/
+.header {
+  padding-top: 14px;
+}
+
+.header .header-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .header-inner:before, .header .header-inner:after {
+  content: " ";
+  display: table;
+}
+
+.header .header-inner:after {
+  clear: both;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  display: block;
+  width: 399px;
+  height: 49px;
+  background: url("../images/logo.png") no-repeat 0 0;
+}
+
+.header .quick-access {
+  float: right;
+  margin-top: 10px;
+}
+
+.header .quick-access .access-link {
+  float: left;
+  margin: 5px 18px 5px 0;
+}
+
+.header .quick-access .access-link li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.header .quick-access .access-link li:before {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 8px 0 6px;
+  background-color: #838383;
+  border-right: 1px solid #c7c7c7;
+  vertical-align: -1px;
+  content: '';
+}
+
+.header .quick-access .access-link li:first-child:before {
+  width: 0;
+  border-right: 0;
+}
+
+.header .quick-access .search-box {
+  float: left;
+  margin-top: -8px;
+  padding: 4px 24px 4px 4px;
+  border: 1px solid #ddd;
+}
+
+.header .quick-access .search-box .form-control {
+  line-height: 17px;
+}
+
+.sub-top {
+  height: 432px;
+  margin-top: 18px;
+  background: url("../images/bg-gnb.jpg") no-repeat 50% 0;
+}
+
+.sub-top .gnb-wrap {
+  max-width: 1900px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  background-color: rgba(9, 69, 206, 0.3);
+}
+
+.sub-top .gnb-wrap .gnb {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.sub-top .gnb-wrap .gnb:before, .sub-top .gnb-wrap .gnb:after {
+  content: " ";
+  display: table;
+}
+
+.sub-top .gnb-wrap .gnb:after {
+  clear: both;
+}
+
+.sub-top .gnb-wrap .gnb li {
+  float: left;
+  width: 33.33%;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.sub-top .gnb-wrap .gnb li a {
+  color: #333333;
+}
+
+.sub-top .gnb-wrap .gnb li.active a, .sub-top .gnb-wrap .gnb li:hover a {
+  color: #fff;
+}
+
+.sub-top .sub-text {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 170px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #666;
+}
+
+.sub-top .sub-text strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 57px;
+  color: #ff8b02;
+}
+
+/*******************************
+    Common
+*******************************/
+.section {
+  margin-bottom: 80px;
+}
+
+.border-box {
+  border: 1px solid #ddd;
+  border-top: 2px solid #333333;
+}
+
+.title-box {
+  padding: 80px 0 50px;
+}
+
+.title-box:before, .title-box:after {
+  content: " ";
+  display: table;
+}
+
+.title-box:after {
+  clear: both;
+}
+
+.title-box .page-title {
+  float: left;
+}
+
+.title-box .location {
+  float: right;
+}
+
+.page-title {
+  font-size: 50px;
+}
+
+.second-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+}
+
+.second-title:before {
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat -200px 0;
+  line-height: 0;
+  color: transparent;
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+  vertical-align: -5px;
+  content: '';
+}
+
+.location {
+  margin-top: 35px;
+}
+
+.location li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.location li:before {
+  display: inline-block;
+  margin: 0 10px 0 8px;
+  color: #888;
+  content: '>';
+}
+
+.location li a {
+  color: #888;
+}
+
+.location li.home {
+  text-transform: capitalize;
+}
+
+.location li.home:before {
+  display: inline-block;
+  background: url("../images/sprite-icon.png") no-repeat -120px 0;
+  line-height: 0;
+  color: transparent;
+  width: 19px;
+  height: 17px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  content: '';
+}
+
+.location li.current a {
+  color: #333333;
+}
+
+.search-box {
+  position: relative;
+  display: inline-block;
+  padding: 4px 24px 4px 4px;
+  border: 1px solid #aaa;
+  vertical-align: middle;
+}
+
+.search-box .form-control {
+  border-width: 0;
+  line-height: 23px;
+}
+
+.search-box .btn-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4px;
+  margin: auto;
+}
+
+.tab-wrap {
+  background: url("../images/bg-tab.jpg") no-repeat 50% 0;
+}
+
+.tab-wrap .tab {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tab-wrap .tab li {
+  display: table-cell;
+  border: 2px solid #ddd;
+}
+
+.tab-wrap .tab li a {
+  display: block;
+  height: 50px;
+  font: bold 18px/54px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  color: #333333;
+  text-align: center;
+  line-height: 48px\9;
+}
+
+.tab-wrap .tab li:hover, .tab-wrap .tab li.active {
+  background-color: #286cdb;
+}
+
+.tab-wrap .tab li:hover a, .tab-wrap .tab li.active a {
+  color: #fff;
+}
+
+.tabs {
+  margin: 0 -2px 50px;
+}
+
+.tabs:before, .tabs:after {
+  content: " ";
+  display: table;
+}
+
+.tabs:after {
+  clear: both;
+}
+
+.tabs li {
+  float: left;
+  width: 10%;
+  padding: 0 2px;
+}
+
+.tabs li a {
+  display: block;
+  padding: 9px 0 6px;
+  border: 1px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
+  background-color: #f3f3f3;
+  font: bold 18px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  color: #333333;
+  letter-spacing: -1.3px;
+  text-align: center;
+  padding: 6px 0 9px\9;
+  font-size: 17px\9;
+  letter-spacing: -2.7px\9;
+}
+
+.tabs ~ .tab-content {
+  display: none;
+}
+
+.tabs ~ .tab-content.regional1, .tabs ~ .tab-content.industry1 {
+  display: block;
+}
+
+.page-text {
+  margin-bottom: 50px;
+  font: bold 22px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+}
+
+.image-shadow {
+  -webkit-box-shadow: 2px 4px 11px #777;
+  box-shadow: 2px 4px 11px #777;
+}
+
+.text-blue {
+  color: #015df4;
+}
+
+.text-red {
+  color: #ff3405;
+}
+
+/*******************************
+    로그인
+*******************************/
+.signin {
+  margin: 193px auto 0;
+  padding: 155px 0 195px;
+  border: 10px solid #ccc;
+  text-align: center;
+}
+
+.signin:before, .signin:after {
+  content: " ";
+  display: table;
+}
+
+.signin:after {
+  clear: both;
+}
+
+.signin .signin-input {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.signin .signin-input li {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.signin .signin-input li:first-child {
+  margin-top: 0;
+}
+
+.signin .signin-input li label {
+  display: inline-block;
+  width: 110px;
+  line-height: 50px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.signin .signin-input li .form-control {
+  width: 376px;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid #ddd;
+  vertical-align: middle;
+}
+
+.signin .btn-signin {
+  display: inline-block;
+  padding: 0 66px;
+  background-color: #286cdb;
+  font: bold 24px/115px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  color: #fff;
+  vertical-align: top;
+}
+
+/*******************************
+    교육신청
+*******************************/
+.btn-apply-box .btn {
+  width: 160px;
+}
+
+/*******************************
+    커뮤니티
+*******************************/
+.board-search {
+  float: right;
+  margin: 60px 0 20px;
+}
+
+.board-search .selectbox {
+  float: left;
+}
+
+.board-search .selectbox .selectbox-value {
+  font-size: 17px;
+  line-height: 1.82;
+  color: #888;
+}
+
+.board-search .selectbox .selectbox-value:after {
+  border-left: 0;
+}
+
+.board-search .search-input {
+  float: left;
+  margin-left: 10px;
+}
+
+.board-search .search-input .form-control {
+  width: 208px;
+}
+
+.board-search .search-input .btn {
+  line-height: 30px;
+  vertical-align: top;
+}
+
+td.subject {
+  padding-left: 17px;
+  padding-right: 17px;
+  text-align: left;
+}
+
+td.subject a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachment {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../images/sprite-icon.png") no-repeat -320px 0;
+  font-size: 0;
+  color: transparent;
+  vertical-align: top;
+}
+
+.btn-board-box {
+  margin: 18px 0 -8px;
+}
+
+.image-board {
+  clear: both;
+  padding: 12px 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.image-board:before, .image-board:after {
+  content: " ";
+  display: table;
+}
+
+.image-board:after {
+  clear: both;
+}
+
+.image-board li {
+  float: left;
+  width: 25%;
+  padding: 0 37px 47px 37px;
+  font-size: 20px;
+}
+
+.image-board li:nth-child(4n+1) {
+  clear: left;
+}
+
+.image-board li img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.image-board li .gallery-info {
+  color: #777777;
+  text-align: center;
+}
+
+.image-board li .gallery-info .title {
+  overflow: hidden;
+  margin: 10px 0 15px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.statistics-search {
+  margin-top: 12px;
+  padding: 26px 50px 26px 20px;
+  border: 1px solid #ddd;
+  background-color: #ebebeb;
+}
+
+.statistics-search:before, .statistics-search:after {
+  content: " ";
+  display: table;
+}
+
+.statistics-search:after {
+  clear: both;
+}
+
+.statistics-search strong {
+  float: left;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.statistics-search strong:after {
+  display: inline-block;
+  width: 2px;
+  height: 22px;
+  margin-left: 18px;
+  background-color: #aaa;
+  vertical-align: -4px;
+  content: '';
+}
+
+.statistics-search .statistics-content {
+  float: left;
+}
+
+.statistics-search .btn {
+  float: right;
+  width: 116px;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+/*******************************
+    Helper Class
+*******************************/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

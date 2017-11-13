@@ -24,42 +24,42 @@ select {
         vertical-align: 2px;
     }
 }
-/*Selectbox*/
+/* select box */
 .selectbox {
     position: relative;
     display: inline-block;
     border: 1px solid #aaa;
     background-color: #fff;
     text-align: left;
-}
-.selectbox select {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-.selectbox .selectbox-value {
-    display: block;
-    padding: 0 30px 0 10px;
-    background-color: #fff;
-    font-weight: 400;
-    line-height: 1.85;
-}
-.selectbox .selectbox-value:after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 4px;
-    display: inline-block;
-    width: 19px;
-    height: 18px;
-    margin: auto;
-    background: url("../images/sprite-icon.png") no-repeat -360px 0;
-    line-height: 0;
-    color: transparent;
-    vertical-align: middle;
-    content: '';
+    select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .selectbox-value {
+        display: block;
+        padding: 0 30px 0 10px;
+        background-color: #fff;
+        font-weight: 400;
+        line-height: 1.85;
+        &:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 4px;
+            display: inline-block;
+            width: 19px;
+            height: 18px;
+            margin: auto;
+            background: url("../images/sprite-icon.png") no-repeat -360px 0;
+            line-height: 0;
+            color: transparent;
+            vertical-align: middle;
+            content: '';
+        }
+    }
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>통계자료 관리목록</title>
+    <link rel="stylesheet" href="../../static/css/admin.css">
+</head>
+<body>
+<div class="wrap">
+    <!-- Header -->
+    <div class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="#"><span class="sr-only">한국여성어업인연합회</span></a></h1>
+        </div>
+        <div class="sub-top">
+            <div class="gnb-wrap">
+                <h2 class="sr-only">메인 메뉴</h2>
+                <ul class="gnb">
+                    <li><a href="#">교육신청</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li class="active"><a href="#">통계자료</a></li>
+                </ul>
+            </div>
+            <p class="sub-text">어촌의 복지 증진과 지역사회 발전에 기여하는 <strong>한국여성어업인연합회 <span class="text-blue">관리자페이지입니다.</span></strong></p>
+        </div>
+    </div>
+    <!-- Header //end -->
+    <!-- Content -->
+    <div class="content">
+        <!-- 서브 탭메뉴 -->
+        <div class="tab-wrap">
+            <h3 class="sr-only">서브 탭메뉴</h3>
+            <ul class="tab">
+                <li class="active"><a href="#">통계자료</a></li>
+            </ul>
+        </div>
+        <!-- 서브 탭메뉴 //end -->
+        <!-- container -->
+        <div class="container">
+            <div class="title-box">
+                <h2 class="page-title">통계자료 관리목록</h2>
+            </div>
+            <p class="page-text">한국여성어업인연합회 통계자료를 보여주는 화면입니다.</p>
+            <!-- 통계자료 -->
+            <h3 class="second-title">통계자료</h3>
+            <table class="table table-vertical table-important" summary="통계자료를 검색하는 게시판">
+                <colgroup>
+                    <col style="width: 120px">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>기간별</th>
+                    <td>
+                        <div class="selectbox" style="width:228px;">
+                            <strong class="selectbox-value">선택</strong>
+                            <select onchange="selectboxEvent(this);">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>분회별</th>
+                    <td>
+                        <div class="selectbox" style="width:228px;">
+                            <strong class="selectbox-value">선택</strong>
+                            <select onchange="selectboxEvent(this);">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>종사어업별</th>
+                    <td>
+                        <div class="selectbox" style="width:228px;">
+                            <strong class="selectbox-value">선택</strong>
+                            <select onchange="selectboxEvent(this);">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="statistics-search">
+                <strong>검색선택</strong>
+                <div class="statistics-content"></div>
+                <a href="#" class="btn btn-primary">검색</a>
+            </div>
+            <!-- 통계자료 //end -->
+        </div>
+        <!-- container //end -->
+    </div>
+    <!-- Content //end -->
+</div>
+</body>
+</html>

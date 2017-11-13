@@ -65,7 +65,13 @@ table {
   border: 1px solid transparent;
   font-size: 18px;
   line-height: 31px;
+  text-align: center;
   vertical-align: middle;
+}
+
+.btn-md {
+  font-size: 20px;
+  line-height: 50px;
 }
 
 .btn-lg {
@@ -117,6 +123,10 @@ table {
 
 .btn-align-center {
   text-align: center;
+}
+
+.btn-align-right {
+  text-align: right;
 }
 
 /*******************************
@@ -172,7 +182,7 @@ select {
   vertical-align: 2px;
 }
 
-/*Selectbox*/
+/* select box */
 .selectbox {
   position: relative;
   display: inline-block;
@@ -227,6 +237,7 @@ select {
 .table th, .table td {
   border: 1px solid #ddd;
   font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  vertical-align: middle;
 }
 
 .table th {
@@ -239,7 +250,6 @@ select {
   padding: 15px 0;
   font-size: 18px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .table td.align-left {
@@ -314,7 +324,7 @@ select {
   height: 32px;
   margin: 0 1px;
   border: 1px solid #d4d4d4;
-  font: bold 18px/34px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/30px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   color: #333;
   text-align: center;
   cursor: pointer;
@@ -323,6 +333,10 @@ select {
 
 .pagination .page.active, .pagination .page:hover {
   border-color: #777;
+  color: #286cdb;
+}
+
+.pagination .page.first, .pagination .page.last, .pagination .page.prev, .pagination .page.next {
   color: #286cdb;
 }
 

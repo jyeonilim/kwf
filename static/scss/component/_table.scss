@@ -8,6 +8,7 @@
     th, td {
         border: 1px solid #ddd;
         font-family: $font-family-second;
+        vertical-align: middle;
     }
     th {
         padding: 13px 0 10px;
@@ -18,7 +19,6 @@
         padding: 15px 0;
         font-size: 18px;
         text-align: center;
-        vertical-align: middle;
         &.align-left {
             text-align: left;
         }
@@ -87,14 +87,17 @@
         height: 32px;
         margin: 0 1px;
         border: 1px solid #d4d4d4;
-        font: bold 18px/34px $font-family-second;
+        font: bold 18px/30px $font-family-second;
         color: #333;
         text-align: center;
         cursor: pointer;
         line-height: 28px\9;
-    }
-    .page.active, .page:hover {
-        border-color: #777;
-        color: #286cdb;
+        &.active, &:hover {
+            border-color: #777;
+            color: #286cdb;
+        }
+        &.first, &.last, &.prev, &.next {
+            color: #286cdb;
+        }
     }
 }

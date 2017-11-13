@@ -7,9 +7,14 @@
     border: 1px solid transparent;
     font-size: 18px;
     line-height: 31px;
+    text-align: center;
     vertical-align: middle;
 }
 .btn-sm {}
+.btn-md {
+    font-size: 20px;
+    line-height: 50px;
+}
 .btn-lg {
     font-size: 30px;
     line-height: 60px;
@@ -53,6 +58,9 @@
 }
 .btn-align-center {
     text-align: center;
+}
+.btn-align-right {
+    text-align: right;
 }
 
 /*******************************
