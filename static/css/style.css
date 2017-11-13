@@ -242,7 +242,7 @@ select {
 
 .table th {
   padding: 13px 0 10px;
-  background-color: #fafafa;
+  background-color: #ebebeb;
   font-size: 20px;
 }
 
@@ -250,6 +250,7 @@ select {
   padding: 15px 0;
   font-size: 18px;
   text-align: center;
+  letter-spacing: -1px;
 }
 
 .table td.align-left {
@@ -639,7 +640,6 @@ button {
 
 .border-box {
   border: 1px solid #ddd;
-  border-top: 2px solid #333333;
 }
 
 .title-box {
@@ -683,6 +683,11 @@ button {
   margin-right: 6px;
   vertical-align: -5px;
   content: '';
+}
+
+.title-line {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333333;
 }
 
 .location {
@@ -1506,6 +1511,7 @@ button {
 .board-search .selectbox .selectbox-value {
   font-size: 16px;
   line-height: 1.94;
+  color: #888;
 }
 
 .board-search .search-input {
@@ -1515,6 +1521,11 @@ button {
 
 .board-search .search-input .form-control {
   width: 208px;
+}
+
+.board-search .search-input .btn {
+  line-height: 30px;
+  vertical-align: top;
 }
 
 td.subject {
@@ -1628,6 +1639,10 @@ td.subject a {
 .btn-board .btn {
   width: 130px;
   font-size: 22px;
+}
+
+.btn-board.btn-align-right {
+  margin: 20px 0 -39px;
 }
 
 .write-board {

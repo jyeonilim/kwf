@@ -12,13 +12,14 @@
     }
     th {
         padding: 13px 0 10px;
-        background-color: #fafafa;
+        background-color: #ebebeb;
         font-size: 20px;
     }
     td {
         padding: 15px 0;
         font-size: 18px;
         text-align: center;
+        letter-spacing: -1px;
         &.align-left {
             text-align: left;
         }
