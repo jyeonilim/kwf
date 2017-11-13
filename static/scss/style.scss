@@ -996,6 +996,75 @@ td.subject {
         }
     }
 }
+.view-board {
+    border-top-width: 4px;
+    border-bottom: 2px solid #333;
+    th, td {
+        border: 0;
+        border-bottom: 1px solid #aaa;
+    }
+    thead {
+        th {
+            padding-left: 22px;
+            background-color: #f6f6f6;
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+    tbody {
+        th {
+            background-color: #e9e9e9;
+            &.align-top {
+                vertical-align: top;
+            }
+        }
+        td {
+            padding-left: 20px;
+            text-align: left;
+            &.view-content {
+                line-height: 60px;
+            }
+        }
+    }
+}
+.btn-board {
+    margin-top: 50px;
+    .btn {
+        width: 130px;
+        font-size: 22px;
+    }
+}
+.write-board {
+    border-top-width: 4px;
+    th, td {
+        border: 0;
+        border-bottom: 1px solid #aaa;
+    }
+    thead {
+        th {
+            padding-left: 22px;
+            background-color: #f6f6f6;
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+    tbody {
+        th {
+            background-color: #e9e9e9;
+        }
+        td {
+            padding-left: 20px;
+            text-align: left;
+            label {
+                margin-right: 64px;
+            }
+            &.editor-area {
+                padding: 17px 0 0;
+                border-bottom: 0;
+            }
+        }
+    }
+}
 
 /*******************************
     로그인
