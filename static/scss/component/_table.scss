@@ -7,7 +7,6 @@
     border-top: 2px solid $gray-dark;
     th, td {
         border: 1px solid #ddd;
-        font-family: $font-family-second;
         vertical-align: middle;
     }
     th {
@@ -22,6 +21,9 @@
         letter-spacing: -1px;
         &.align-left {
             text-align: left;
+        }
+        .btn {
+            line-height: 29px;
         }
     }
     &.table-important {
@@ -55,7 +57,6 @@
 }
 .table-input {
     border-top-width: 4px;
-    font-family: $font-family-second;
     th {
         background-color: #fff;
         font-size: 23px;
@@ -88,7 +89,7 @@
         height: 32px;
         margin: 0 1px;
         border: 1px solid #d4d4d4;
-        font: bold 18px/30px $font-family-second;
+        font: bold 18px/30px $font-family-base;
         color: #333;
         text-align: center;
         cursor: pointer;

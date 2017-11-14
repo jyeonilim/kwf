@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,11 +55,31 @@ table {
   border-spacing: 0;
 }
 
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumGothic-Regular.eot);
+  src: url(../fonts/NanumGothic-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NanumGothic-Regular.woff2) format("woff2"), url(/../fonts/NanumGothic-Regular.woff) format("woff"), url(../fonts/NanumGothic-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumGothic-Bold.eot);
+  src: url(../fonts/NanumGothic-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/NanumGothic-Bold.woff2) format("woff2"), url(../fonts/NanumGothic-Bold.woff) format("woff"), url(../fonts/NanumGothic-Bold.ttf) format("truetype");
+}
+
 /*******************************
     Button
 *******************************/
 .btn {
   display: inline-block;
+  height: 33px;
   padding: 0 15px;
   border: 1px solid transparent;
   font-size: 18px;
@@ -70,6 +89,7 @@ table {
 }
 
 .btn-md {
+  height: 52px;
   font-size: 20px;
   line-height: 50px;
 }
@@ -78,7 +98,6 @@ table {
   height: 62px;
   font-size: 30px;
   line-height: 58px;
-  line-height: 60px\9;
 }
 
 .btn-primary {
@@ -238,7 +257,6 @@ select {
 
 .table th, .table td {
   border: 1px solid #ddd;
-  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   vertical-align: middle;
 }
 
@@ -257,6 +275,10 @@ select {
 
 .table td.align-left {
   text-align: left;
+}
+
+.table td .btn {
+  line-height: 29px;
 }
 
 .table.table-important td {
@@ -289,7 +311,6 @@ select {
 
 .table-input {
   border-top-width: 4px;
-  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
 }
 
 .table-input th {
@@ -327,7 +348,7 @@ select {
   height: 32px;
   margin: 0 1px;
   border: 1px solid #d4d4d4;
-  font: bold 18px/30px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/30px "Nanum Gothic", sans-serif;
   color: #333;
   text-align: center;
   cursor: pointer;
@@ -641,6 +662,7 @@ button {
 }
 
 .border-box {
+  min-height: 168px;
   border: 1px solid #ddd;
 }
 
@@ -774,10 +796,9 @@ button {
 .tab-wrap .tab li a {
   display: block;
   height: 50px;
-  font: bold 18px/52px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/47px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   color: #333333;
   text-align: center;
-  line-height: 48px\9;
 }
 
 .tab-wrap .tab li:hover, .tab-wrap .tab li.active {
@@ -809,17 +830,19 @@ button {
 
 .tabs li a {
   display: block;
-  padding: 7px 0 8px;
   border: 1px solid #d9d9d9;
   border-bottom: 3px solid #d9d9d9;
   background-color: #f3f3f3;
-  font: bold 18px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/38px "Nanum Gothic", sans-serif;
   color: #333333;
   letter-spacing: -1.3px;
   text-align: center;
-  padding: 6px 0 9px\9;
-  font-size: 17px\9;
-  letter-spacing: -2.7px\9;
+}
+
+.tabs li a:hover, .tabs li a:active {
+  border-bottom-color: #b9b9b9;
+  background-color: #015df4;
+  color: white;
 }
 
 .tabs ~ .tab-content {
@@ -927,8 +950,7 @@ button {
 
 .main-visual .slick-slide {
   height: 410px;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  text-align: center;
 }
 
 .main-visual .slick-dots {
@@ -1463,7 +1485,7 @@ button {
 .apply-complete {
   width: 912px;
   margin: 0 auto 50px;
-  padding: 88px 70px 70px;
+  padding: 108px 40px 70px;
   border: 1px solid #ddd;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1490,7 +1512,7 @@ button {
   display: inline-block;
   width: 292px;
   height: 223px;
-  margin: -20px 55px 0 0;
+  margin: -40px 45px 0 0;
   background: url("../images/icon-computer.png") no-repeat 0 0;
   content: '';
 }
@@ -1732,9 +1754,8 @@ td.subject a {
   height: 115px;
   padding: 0 66px;
   background-color: #286cdb;
-  font: bold 24px/115px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 24px/113px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   color: #fff;
-  line-height: 113px\9;
 }
 
 .member-access-box {
@@ -1769,8 +1790,7 @@ td.subject a {
   float: right;
   width: 278px;
   height: 50px;
-  font: bold 21px/48px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
-  line-height: 42px\9;
+  font: bold 21px/42px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
 }
 
 .member-access .btn.btn-arrow {
@@ -2054,19 +2074,27 @@ td.subject a {
 
 .state-board td {
   padding: 40px 0;
-  font-weight: bold;
-  color: #015df4;
+  color: #555;
 }
 
 .state-board td:first-child {
-  color: #333333;
+  font-weight: bold;
 }
 
 .btn-delete {
   display: inline-block;
   width: 141px;
   height: 45px;
-  background: url("../images/btn-delete.gif") no-repeat 0 0;
+  background: #015df4;
+  color: white;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-delete:hover {
+  color: white;
 }
 
 .leave-id {

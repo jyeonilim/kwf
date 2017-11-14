@@ -60,6 +60,7 @@ table {
 *******************************/
 .btn {
   display: inline-block;
+  height: 33px;
   padding: 0 15px;
   border: 1px solid transparent;
   font-size: 18px;
@@ -69,6 +70,7 @@ table {
 }
 
 .btn-md {
+  height: 52px;
   font-size: 20px;
   line-height: 50px;
 }
@@ -77,7 +79,6 @@ table {
   height: 62px;
   font-size: 30px;
   line-height: 58px;
-  line-height: 60px\9;
 }
 
 .btn-primary {
@@ -163,7 +164,6 @@ table {
 
 .table th, .table td {
   border: 1px solid #ddd;
-  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   vertical-align: middle;
 }
 
@@ -182,6 +182,10 @@ table {
 
 .table td.align-left {
   text-align: left;
+}
+
+.table td .btn {
+  line-height: 29px;
 }
 
 .table.table-important td {
@@ -214,7 +218,6 @@ table {
 
 .table-input {
   border-top-width: 4px;
-  font-family: "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
 }
 
 .table-input th {
@@ -252,7 +255,7 @@ table {
   height: 32px;
   margin: 0 1px;
   border: 1px solid #d4d4d4;
-  font: bold 18px/30px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/30px "Nanum Gothic", sans-serif;
   color: #333;
   text-align: center;
   cursor: pointer;

@@ -4,11 +4,13 @@ $(document).ready(function() {
     $('.main-visual').slick({
         arrows: false,
         dots: true,
-        autoplay: true
+        autoplay: true,
+        fade: true
     });
     // 메인 하단 유관부서 롤링
     $('.main-department').slick({
         infinite: true,
+        autoplay: true,
         slidesToShow: 5,
         slidesToScroll: 1
     });
