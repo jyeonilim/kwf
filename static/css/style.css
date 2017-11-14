@@ -75,8 +75,10 @@ table {
 }
 
 .btn-lg {
+  height: 62px;
   font-size: 30px;
-  line-height: 60px;
+  line-height: 58px;
+  line-height: 60px\9;
 }
 
 .btn-primary {
@@ -772,7 +774,7 @@ button {
 .tab-wrap .tab li a {
   display: block;
   height: 50px;
-  font: bold 18px/54px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font: bold 18px/52px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   color: #333333;
   text-align: center;
   line-height: 48px\9;
@@ -807,7 +809,7 @@ button {
 
 .tabs li a {
   display: block;
-  padding: 9px 0 6px;
+  padding: 7px 0 8px;
   border: 1px solid #d9d9d9;
   border-bottom: 3px solid #d9d9d9;
   background-color: #f3f3f3;
@@ -1387,6 +1389,7 @@ button {
   width: 36px;
   height: 37px;
   background-position: -240px 0;
+  vertical-align: -7px;
 }
 
 .contact-box .contact-list {
@@ -1466,7 +1469,7 @@ button {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   border-radius: 8px;
-  background: url("../images/bg-gradient.gif") repeat-x 0 0;
+  background: #f3f3f3 url("../images/bg-gradient.gif") repeat-x 0 0;
   font-weight: bold;
   font-size: 22px;
   line-height: 40px;
@@ -1570,6 +1573,7 @@ td.subject a {
   width: 25%;
   padding: 0 37px 50px 37px;
   font-size: 20px;
+  text-align: center;
 }
 
 .image-board li:nth-child(4n+1) {
@@ -1587,11 +1591,6 @@ td.subject a {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #333333;
-  text-align: center;
-}
-
-.image-board li .gallery-info .title {
-  text-align: left;
 }
 
 .image-board li .date {
@@ -1730,10 +1729,12 @@ td.subject a {
 
 .signin .btn-signin {
   float: left;
+  height: 115px;
   padding: 0 66px;
   background-color: #286cdb;
   font: bold 24px/115px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
   color: #fff;
+  line-height: 113px\9;
 }
 
 .member-access-box {
@@ -1767,7 +1768,9 @@ td.subject a {
 .member-access .btn {
   float: right;
   width: 278px;
+  height: 50px;
   font: bold 21px/48px "MalgunGothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  line-height: 42px\9;
 }
 
 .member-access .btn.btn-arrow {
@@ -1939,6 +1942,7 @@ td.subject a {
 .mobile-confirm dd .btn {
   width: 280px;
   margin-top: 35px;
+  line-height: 57px\9;
 }
 
 .text-essential {
@@ -2082,6 +2086,7 @@ td.subject a {
 .btn-leave .btn {
   width: 204px;
   font-size: 23px;
+  line-height: 60px;
 }
 
 /*******************************
